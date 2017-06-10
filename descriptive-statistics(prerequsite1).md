@@ -31,6 +31,8 @@ Tip:
 
 A variable is a value that may change or differ between individuals in an experiment. Scores on an intelligence test qualify, since each person may have a different score.
 
+**Note:** Statements about the relationships between variables are called **Hypotheses**. (Ex: 'Students who *sleep* more before an exam tend to get better *marks* in the exam on the next day).
+
 ## Extraneous Factors (Lurking Variables):
 
 **Extraneous Factors** are those things that can influence Constructs. (Ex: Sleep factor before taking a memory test).

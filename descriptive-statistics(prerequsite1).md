@@ -374,6 +374,9 @@ For an ordered(sorted) dataset `x1, x2, x3, .. , x(n-1), xn` the median is defin
 - For odd elements: `Median = x(n+1/2)`, and
 - For even elements: `Median = ( x(n/2) + x(n+1/2) ) / 2`.
 
+**Finding the median on a histogram**:
+Sum up all the frequencies. Find the median number (depending on odd or even ~= half the sum of frequencies). The value (of the bin) at the median number is the median.
+
 ### Mean, Median and Mode in Normal Distribution:
 In a normal distribution, since the peak is in the middle the mode will be in the middle (highest frequency bin). Also, since the distribution is symmetric, the median and the mean will also be in the middle.
 

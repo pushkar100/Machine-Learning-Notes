@@ -10,11 +10,15 @@ The 3 Factors that are always important to conduct a good research:
 ## Constructs:
 
 There are certain things for which there cannot exist just one method to correctly measure them. 
-Examples of such things include happiness, guilt, memory, etc and they are known as *Constructs* (Very difficult to define and measure).
+Examples of such things include happiness, guilt, memory, etc and they are known as **Constructs** (Very difficult to define and measure).
 
-Using *Operational Definitions*, we can measure Constructs in the real-world. What is Operationa Definition?:
+Using **Operational Definitions**, we can measure Constructs in the real-world. What is Operationa Definition?:
 http://www.pqsystems.com/qualityadvisor/DataCollectionTools/operational_definition.php
 (Operational definition removes ambiguity while measuring something that could be interpreted differently by different people.)
+
+Operational definition:
+- Is a way of turning constructs into variables we can measure, and
+- A way of describing a variable in terms of the way we measure it.
 
 Tip: 
 - *Gallons of water* is NOT a construct since it can be easily measured in *gallons*. 
@@ -25,7 +29,7 @@ Tip:
 
 ## Extraneous Factors (Lurking Variables):
 
-*Extraneous Factors* are those things that can influence Constructs. (Ex: Sleep factor before taking a memory test).
+**Extraneous Factors** are those things that can influence Constructs. (Ex: Sleep factor before taking a memory test).
 If a certain factor is made constant (Like conducting an experiment at the same time when time is considered as a factor), 
 it is better for the outcome/conclusion. (Ex: If everyone takes a memory test at the same time [Acc. to their respective timezones]
 then the results can be trusted better.)
@@ -41,7 +45,7 @@ Population is the entire set of items included in the experiment and the Sample 
 The average result of the experiment for the population is known as `μ (myu)`. [Population average]
 The average result of the experiment for the sample set is known as `x̅ (x bar)`. [Sample average]
 
-*Note*: A population is a group of phenomena that have something in common. The term often refers to a group of people, as in the following examples:
+**Note**: A population is a group of phenomena that have something in common. The term often refers to a group of people, as in the following examples:
 - All registered voters in Crawford County
 - All members of the International Machinists Union
 - All Americans who played golf at least once in the past year
@@ -66,7 +70,7 @@ The difference between μ (myu) & x̅ (x bar) is called *Sampling Error* `μ - x
 ### Parameter v/s Statistic:
 
 A parameter is a characteristic of a population, while a statistic is a characteristic of a sample.
-Therefore, μ (myu) is a *parameter* and x̅ (x bar) is a *statistic*.
+Therefore, μ (myu) is a **parameter** and x̅ (x bar) is a **statistic**.
 
 Refer: https://www.cliffsnotes.com/study-guides/statistics/sampling/populations-samples-parameters-and-statistics
 
@@ -88,14 +92,14 @@ CANNOT be cause for causation.
 
 The reasons for this could be the existence of OTHER extraneous factors (Other lurking variables).
 
-A fun example that shows correlation cannot prove causation is the *Golden Arches Theory*. 
+A fun example that shows correlation cannot prove causation is the **Golden Arches Theory**. 
 (https://mediawiki.middlebury.edu/wiki/IPE/Golden_Arches_Theory_of_Conflict_Prevention) 
 (Answer: Opening a McDonald's in other countries *cannot* be the cause for that country to not go to war with the USA).
 
 ### How to prove causation?
 
 For showing a relationship/correlation, we need to undertake observational studies/surveys (like asking people as part of a survey).
-In order to show causation, we need to perform a *Controlled Experiment*.
+In order to show causation, we need to perform a **Controlled Experiment**.
 
 ## Surveys v/s Controlled Experiments:
 
@@ -126,8 +130,8 @@ Basically, in controlled experiments, we control the variables/factors.
 Example: Placebo: Give a random set of people a sleep pill (half the people get an 'active' pill and half get an 'inactive' pill). The 
 experiment is to test whether the 'active' pill has an effect on the user's sleep. The participants are NOT told if they are receiving an active
 pill or an inactive pill. The researchers want all the people to believe that they are taking medication(active pill). 
-This process helps eliminate bias from the outcome. [The inactive pill is a *placebo* and the case where people who take the placebo and felt better 
-is known as the *placebo effect*. If people know they are taking the placebo then they might subconsciously think that 
+This process helps eliminate bias from the outcome. [The inactive pill is a **placebo** and the case where people who take the placebo and felt better 
+is known as the **placebo effect**. If people know they are taking the placebo then they might subconsciously think that 
 they are not doing anything and hence it will influence the results.]
 
 Note:
@@ -137,7 +141,7 @@ Note:
 
 ## Random Assigment:
 
-Random assignments could help *minimize some of the lurking variables/extraneous factors*. 
+Random assignments could help **minimize** some of the lurking variables/extraneous factors. 
 
 Example: Say an experiment needed to be done 
 to measure if a pill had a certain effect on people. If a working pill was given to men alone and a non-working pill to women alone and 

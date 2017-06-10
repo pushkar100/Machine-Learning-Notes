@@ -163,7 +163,9 @@ Random assignment works better on *larger samples* (closer to the population).
 
 Examples where random assignment works well are Gender, Age, Wealth, etc (depending upon the context of the experiment to be conducted).
 
+### Random v/s Convenience Samples:
 
+Random samples are assumed to NOT be biased and treats every perso equally (like mentioned above). Convenience samples are the opposite of random samples since it forms the set of people who are conveniently picked (Example: Friends & relatives). They may be biased and not be representative of the population.
 
 
 

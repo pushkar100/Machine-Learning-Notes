@@ -219,7 +219,7 @@ Bar graphs have distinct values or categories on the x-axis (No ranges) and thei
 
 (Refer: https://www.mathsisfun.com/data/histograms.html)
 
-The length of the ranges on the x-axis are known as **bin sizes** or **interval sizes**. The bin size should be optimal, not too small nor too big since it could become difficult to visualize the data.
+The length of the ranges on the x-axis are known as **bin sizes** or **interval sizes**. The bin size should be optimal, not too small nor too big since it could become difficult to visualize the data. The bin/interval size must be the **same** for all the bins.
 
 (Interactive Histogram: http://www.shodor.org/interactivate/activities/Histogram/)
 

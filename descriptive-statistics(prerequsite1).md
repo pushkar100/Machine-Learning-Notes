@@ -255,5 +255,9 @@ Skewed distribution is the opposite of a normal distribution.
 
 Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/1164749820923
 
-
+**Formulae: (To help you with statistics and google sheets):**
+- **Mean** or sample mean is another term for sample average. Therefore, `mean = x̅ (x bar)`. (Sum of all the observed outcomes  from the sample divided by the total number of events)
+- **Deviation** is the difference between one particular value and the mean(x̅).
+- **Squared deviation** is the square of that deviation.
+- **Variance** is the *Sum* of the *Squared deviations* divided by `n` (n = the count of the sample set).
 

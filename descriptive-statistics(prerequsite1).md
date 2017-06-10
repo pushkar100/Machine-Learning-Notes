@@ -257,7 +257,13 @@ Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/11
 
 **Formulae: (To help you with statistics and google sheets):**
 - **Mean** or sample mean is another term for sample average. Therefore, `mean = x̅ (x bar)`. (Sum of all the observed outcomes  from the sample divided by the total number of events)
-- **Deviation** is the difference between one particular value and the mean(x̅).
-- **Squared deviation** is the square of that deviation.
-- **Variance** is the *Sum* of the *Squared deviations* divided by `n` (n = the count of the sample set).
+- **Deviation** of a particular result is the difference between one particular value and the mean(x̅).
+- **Squared deviation** of a particular result is the square of its deviation from the mean(x̅).
+- **Variance** is the *Average* of the *Sum* of the *Squared deviations* divided by `n` (n = the count of the sample set). (In other words, variance is the average of the squared differences from the Mean.)
+- **Standard deviation** is the *Square root* of the *variance*. The Standard Deviation is a measure of how spread out numbers are.
+
+**Google sheets functions:**
+- average()
+- sum()
+- sqrt()
 

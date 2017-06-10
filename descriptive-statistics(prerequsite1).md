@@ -146,6 +146,11 @@ Note:
 
 Extraneous factors need to be controlled in order to get causal results.
 
+**Note:** In a controlled experiment, the researcher seeks to:
+- Manipulate the independent variable.
+- Measure the changes in the dependent variable or outcome.
+- Control the extraneous/lurking variable.
+
 ## Random Assigment:
 
 Random assignments could help **minimize** some of the lurking variables/extraneous factors. 

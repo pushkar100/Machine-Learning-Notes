@@ -227,6 +227,7 @@ Sometimes, in a histogram, we compromise detail for convenience. For example, tr
 
 - With frequency tables, we have exact counts, so we can always create the histogram. But not the opposite way around.
 - With tables, you can add the frequencies in each bin. With a histogram, you don't always know the exact frequencies (Compromise detail for convenience).
+- A histogram lets you visually see the shape of a distribution.
 
 **Note**: When we make a bin size larger, more values will fall into that bin and hence, the frequency for that bin increases.
 

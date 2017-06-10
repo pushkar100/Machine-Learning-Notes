@@ -155,6 +155,10 @@ inconclusive.
 
 If the pills had been given out randomly, then both men and women would be a part of both the pill groups. This would lead to a better conclusion.
 
+In a Random assignment, we: 
+- Select individuals in such a way that everyone has the same chance of being selected.
+- Select individuals in such a way that selection of one individual has no effect on anyone else's chances of being selected.
+
 Random assignment works better on *larger samples* (closer to the population).
 
 Examples where random assignment works well are Gender, Age, Wealth, etc (depending upon the context of the experiment to be conducted).

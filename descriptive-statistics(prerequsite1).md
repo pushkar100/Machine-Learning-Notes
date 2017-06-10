@@ -99,6 +99,8 @@ A fun example that shows correlation cannot prove causation is the **Golden Arch
 (https://mediawiki.middlebury.edu/wiki/IPE/Golden_Arches_Theory_of_Conflict_Prevention) 
 (Answer: Opening a McDonald's in other countries *cannot* be the cause for that country to not go to war with the USA).
 
+**Note:** If there is a correlation, then we can *predict* something but *not prove it*.
+
 ### How to prove causation?
 
 For showing a relationship/correlation, we need to undertake observational studies/surveys (like asking people as part of a survey).

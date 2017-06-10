@@ -260,7 +260,7 @@ Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/11
 - **Deviation** of a particular result is the difference between one particular value and the mean(x̅).
 - **Squared deviation** of a particular result is the square of its deviation from the mean(x̅).
 - **Variance** is the *Average* of the *Sum* of the *Squared deviations* divided by `n` (n = the count of the sample set). (In other words, variance is the average of the squared differences from the Mean.)
-- **Standard deviation** is the *Square root* of the *variance*. The Standard Deviation is a measure of how spread out numbers are.
+- **Standard deviation** is the *Square root* of the *variance*. The Standard Deviation is a measure of how spread out numbers are. Standard deviation is denoted by `σ (sigma)`.
 
 **Google sheets functions:**
 - average()

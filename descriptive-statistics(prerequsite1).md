@@ -225,6 +225,8 @@ The length of the ranges on the x-axis are known as **bin sizes** or **interval 
 
 Sometimes, in a histogram, we compromise detail for convenience. For example, trying to get the exact number of students whose age is less than 20 when the interval contains 20 (20 is within the bin and not at the boundary of the bin) inside it is not possible (although we can get a rough estimate).
 
+**Note**: When we make a bin size larger, more values will fall into that bin and hence, the frequency for that bin increases.
+
 #### Normal Distribution:
 **Normal Distribution** is a function that represents the distribution of many random variables as a symmetrical bell-shaped graph.
 

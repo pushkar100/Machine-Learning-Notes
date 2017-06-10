@@ -1,6 +1,6 @@
 # DESCRIPTIVE STATISTICS NOTES (UDACITY CLASS)
 
-# Lesson 1: Intro to Research Methods.
+# Lesson 1-3: Intro to Research Methods.
 
 The 3 Factors that are always important to conduct a good research:
 1. The size of the sample set (bigger the better)
@@ -181,7 +181,67 @@ Examples where random assignment works well are Gender, Age, Wealth, etc (depend
 
 Random samples are assumed to NOT be biased and treats every perso equally (like mentioned above). Convenience samples are the opposite of random samples since it forms the set of people who are conveniently picked (Example: Friends & relatives). They may be biased and not be representative of the population.
 
+# Lesson 4: Data Visualization
 
+## Frequency chart: 
+A frequency table is a table that shows the total for each category or group of data. 
+**OR**
+A Frequency Table is a table that lists items and uses tally marks to record and show the number of times they occur.
+
+### Frequency Count
+A **frequency count** is a measure of the number of times that an event occurs.
+
+### Relative Frequency:
+The **relative frequency** of an event is defined as the number of times that the event occurs during experimental trials, divided by the total number of trials conducted.
+
+To compute relative frequency, one obtains a frequency count for the total population and a frequency count for a subgroup of the population. The relative frequency for the subgroup is:
+
+`Relative frequency = Subgroup count / Total count`
+
+The above equation expresses relative frequency as a **proportion**. It is also often expressed as a **percentage**. Thus, a relative frequency of 0.50 (proportion) is equivalent to a percentage of 50%.
+
+`percentage = proportion * 100`
+
+**Note:**
+- **All proportion are greater than or equal to `0` and less than or equal to `1` **
+- **The sum of the proportions of all the items in the frequency table must be equal to `1`**
+- **The sum of the percentages of all items in the frequency table must be equal to `100%`**
+
+It is important how we group the data into a frequency chart - and it depends on how we want to view the data. (Example: If we want to see how many students watch Udacity videos from each country, we group the data country-wise on the frequency table. Similarly, if we want to view how many students view the videos from each continent, we'd group the data continent-wise.)
+
+### Histograms:
+We can build **histograms** (Similar to Bar graphs but divided by **ranges** on the `x-axis` and by the **frequency** on the `y-axis`) easily from a given frequency table/chart. 
+
+Bar graphs have distinct values or categories on the x-axis (No ranges) and their order of appearance does not really matter whereas in a histogram the values are ranges (we can change the ranges to depict smaller or bigger groups of x-axis values) and their order of appearance does matter - *Only one order* (Ex:  11-20 interval should come before 21-30 interval).
+
+- Histogram x-axis variable: Numerical & Quantitative (Ex: 0 to 100)
+- Bar graph x-axis variable: Categorical or Qualitative (Ex: Asia, Europe, Africa, etc)
+
+(Refer: https://www.mathsisfun.com/data/histograms.html)
+
+The length of the ranges on the x-axis are known as **bin sizes** or **interval sizes**. The bin size should be optimal, not too small nor too big since it could become difficult to visualize the data.
+
+(Interactive Histogram: http://www.shodor.org/interactivate/activities/Histogram/)
+
+Sometimes, in a histogram, we compromise detail for convenience. For example, trying to get the exact number of students whose age is less than 20 when the interval contains 20 (20 is within the bin and not at the boundary of the bin) inside it is not possible (although we can get a rough estimate).
+
+#### Normal Distribution:
+**Normal Distribution** is a function that represents the distribution of many random variables as a symmetrical bell-shaped graph.
+
+Even on a histogram, the normal distribution would appear like a bell-shaped graph. It would be roughly symmetrical, tapering off at the extremes.
+
+(Refer: http://whatis.techtarget.com/definition/normal-distribution)
+
+#### Skewed Distribution:
+Skewed distribution is the opposite of a normal distribution.
+
+**Positively Skewed Distribution** on a graph means the frequencies are more on the **left side** than on the right. (Also known as right-skewed distribution)
+
+**Negatively Skewed Distribution** on a graph means the frequencies are more on the **right side** than on the left. (Also known as left-skewed distribution)
+
+**Note:** The "skew" does **not** refer to the peak but instead to the tapered side (known as the tail). Normal distribution has two tails, one on either side of the peak.
+
+(Refer: http://www.statisticshowto.com/skewed-distribution/)
 
 
 

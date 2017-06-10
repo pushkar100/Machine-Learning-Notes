@@ -37,6 +37,8 @@ then the results can be trusted better.)
 The more extraneous factors that are constant, the easier it is to trust the conclusion we arrive at from analysing the data. 
 The reason for this is that these lurking variables usually ambush our results (if they keep varying between each item) (lurking to attack analogy).
 
+**Note:** A variable is a value that may change or differ between individuals in an experiment. Scores on an intelligence test qualify, since each person may have a different score.
+
 ## Population & Sample:
 
 (Refer: https://classroom.udacity.com/courses/ud827/lessons/1293178557/concepts/565334210923)

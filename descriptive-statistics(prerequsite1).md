@@ -317,6 +317,9 @@ Example: Shoe sizes histogram - women mostly have size 7 and men mostly have siz
 
 The **mode** is **not affected by outliers** at all! (see outliers under 'mean' section)
 
+**Note:** Find mode on google spreadsheets: Use the `=mode(<range>)` function (Example: `=mode(A2:A28)` and hit <enter>.
+(Or refer to this video: https://www.youtube.com/watch?v=TC0ZGYEf8dU)
+
 ### Mean:
 Mean is the average of all the *sample* data.
 

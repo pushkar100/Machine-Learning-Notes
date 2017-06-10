@@ -241,6 +241,8 @@ The histogram for a uniform distribution will look like a *rectangle*. The frequ
 
 A deck of cards has a uniform distribution because the likelihood of drawing a heart, a club, a diamond or a spade is equally likely. A coin also has a uniform distribution because the probability of getting either heads or tails in a coin toss is the same.
 
+(Refer: http://study.com/academy/lesson/uniform-distribution-in-statistics-definition-examples.html)
+
 #### Normal Distribution:
 **Normal Distribution** is a function that represents the distribution of many random variables as a symmetrical bell-shaped graph.
 

@@ -225,7 +225,8 @@ The length of the ranges on the x-axis are known as **bin sizes** or **interval 
 
 Sometimes, in a histogram, we compromise detail for convenience. For example, trying to get the exact number of students whose age is less than 20 when the interval contains 20 (20 is within the bin and not at the boundary of the bin) inside it is not possible (although we can get a rough estimate).
 
-With frequency tables, we have exact counts, so we can always create the histogram. But not the opposite way around.
+- With frequency tables, we have exact counts, so we can always create the histogram. But not the opposite way around.
+- With tables, you can add the frequencies in each bin. With a histogram, you don't always know the exact frequencies (Compromise detail for convenience).
 
 **Note**: When we make a bin size larger, more values will fall into that bin and hence, the frequency for that bin increases.
 

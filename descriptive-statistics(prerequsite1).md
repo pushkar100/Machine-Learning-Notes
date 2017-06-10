@@ -281,3 +281,107 @@ Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/11
 - sum()
 - sqrt()
 
+# Lessons 8-10: Central Tendency
+
+## Choosing a number to represent typical data:
+
+There maybe more than one number used to represent typical data. Example: What is the typical salary of a post-graduate engineer? Often, we can use different types of numbers to answer such questions.
+
+1. **Mode** is the value at which the *frequency is the highest*. **(OR)** The *most common value* is the called the mode. (The number that *occurs the most*)
+	- On a histogram, this is the bin or interval for which the frequency is the *Highest*.  The mode occurs on the `x-axis`.
+	- For a frequency table, it is the value with the highest frequency (count).
+2. **Median** is the value in the middle of the distribution (already defined earlier - check).
+3. **Average/Mean** is that specific spot which rests in the center of the distribution, which is the average of all the values (already defined earlier - check).
+
+### Modes:
+#### No modes:
+Some distributions have no modes. Example: **Uniform Distribution**. Since all the bins' frequencies are the *same* there is not one value which occurs the most. Hence, no mode.
+
+#### Multiple modes:
+Some distributions have multiple modes.  These are called **Bi-modal Distributions**.
+
+Example: Shoe sizes histogram - women mostly have size 7 and men mostly have size 9 (Therefore, we can see two humps on the graph, even though there is only one value with the highest frequency).
+
+(Refer: http://www.statisticshowto.com/what-is-a-bimodal-distribution/)
+
+**Note: Global Maxima v/s Local Maxima:**
+- When we take the entire sample set and find one mode or peak (most commonly occurring value) then that value is known as the **Global maxima**.
+- If we split the graph into regions (like in the case of shoe sizes for men & women example) and find the peak/mode for those regions separately then those values become the **Local maxima** for that respective region.
+
+**More on modes:**
+- The mode can describe any type of data - *Categorical(qualitative)* as well as *Quantitative(numerical)*.
+- All scores in the dataset **DON'T** affect the mode. (For example: if mode value (say x)  has frequency 100 and another value (say y) exists with frequency 10. If we add another score to y, increasing it's frequency to 11, the mode value (frequency of x) does not change since it is still the highest. (Therefore, all scores do not affect the mode and it holds true for adding, deleting or modifying a score). - see outliers.
+- There is **NO** equation for the mode.
+- The mode is *likely to change* from one sample set to another. The mode *need not be same in all the samples*.
+- The mode changes with the *bin/interval size* on a histogram: If the bin is made large enough, most values will fit in there and it will have the highest frequency, so the mode will be that bin. If made smaller, the mode might fit into some other bin instead of the current one. 
+
+The **mode** is **not affected by outliers** at all! (see outliers under 'mean' section)
+
+### Mean:
+Mean is the average of all the *sample* data.
+
+`Mean = sum of all n sample data / n`. 
+
+It has an equation and hence it is used alongside *mode* for data representation. **Mean/average** is represented by `x̅ (x bar)`
+
+**Mathematical Equations for Mean:**
+
+For a **Sample set**:
+`x̅ = Σx / n`  
+where `Σx` is the sum of all the values in the sample data set (`x1+x2+..+xn`) and `n` is the number of values in the sample data set. (Sample average)
+
+For an entire **Population**,:
+`x̅ = Σx / N`  
+where `Σx` is the sum of all the values in the entire population (`x1+x2+..+xN`) and `N` is the number of all values in the entire population. (Population average)
+
+**Notes on mean:**
+- *All* the scores in the distribution *affect* the mean. (That is, the mean will change if we add an extreme value to the dataset. For example, adding 10000 to a dataset of 10 elements with a mean of 7 will change the mean drastically).
+- The mean can be described by a **formula** (unlike mode).
+- **MOST IMPORTANTLY: Many samples from the same population will have similar means** (unlike mode). (Explained in detail later - but this can be seen to be true with random samples).
+
+#### Outliers:
+**Outliers** are those values in data that can be *unexpectedly different* from the rest of the values.
+
+For example, in the set 10, 96, 100, 5, 12, 67, 100000, 50 the value 100000 is the outliner because it is an extreme value w.r.t the other ones in the set. 
+
+When outliers exist, the **mean will be greatly affected** and the mean will **not be an accurate representation of the data (misleading).** It makes the mean a lot less representative of the middle of the data.
+
+A **median** might be more representative of the middle data. It is less affected by the outliers compared to the mean.
+
+Note that the **mode** is **not affected by outliers** at all!
+
+### Median:
+The median is the middle value of a data set. But, it is not just any middle value - it is the middle value when the data set is **sorted into order**. From *least-to-greatest* or *greatest-to-least* - both orders are okay!
+
+Example: Find median of 5, 3, 7, 10, 6?
+Answer:  Sort them as 3, 5, 6, 7, 10. The middle value is 6. Median = `6`.
+
+#### Median for even number of values:
+When odd number of values exist, it is easy to pick the middle one after sorting them. But, for even set of values, there are two middle numbers (instead of just one). In this case, we find the middle point of those two middle numbers. That is, median will be the **average of the middle two values**.
+
+Example: Find median of 5, 3, 7, 10, 4, 6?
+Answer:  Sort them as 3, 4, 5, 6, 7, 10. The middle values are 5 & 6. Median = (5 + 6) / 2 = `5.5`.
+
+**Note**:  Median is known to have a **Robust** tendency. What this means is that it is not affected much by departures from the norm (caused by outliers). Hence, it is more reliable than the mean to calculate the middle point of the distribution when data contains outliers.
+
+The median is generally used as a measure whenever we deal with *highly skewed distributions*.
+
+**Formula for median:**
+For an ordered(sorted) dataset `x1, x2, x3, .. , x(n-1), xn` the median is defined as:
+- For odd elements: `Median = x(n+1/2)`, and
+- For even elements: `Median = ( x(n/2) + x(n+1/2) ) / 2`.
+
+### Mean, Median and Mode in Normal Distribution:
+In a normal distribution, since the peak is in the middle the mode will be in the middle (highest frequency bin). Also, since the distribution is symmetric, the median and the mean will also be in the middle.
+
+Therefore, `mean(x̅) = median = mode` for **Normal Distribution**.
+
+### Mean, Median and Mode in Skewed Distribution:
+In a Skewed distribution, the bin with the highest frequency will be to one side of the distribution. That bin represents the mode. 
+
+The mean and median will be affected by the tail (outliers). But, the median being more robust, will not move towards the tail side as much as the mean does. 
+
+Therefore:
+- `mean(x̅) < median < mode` for **Negative Skewed Distribution**.
+- `mode > median > mean(x̅)` for **Positive Skewed Distribution**.
+(Sometimes they could be `<=` or `>=` also)

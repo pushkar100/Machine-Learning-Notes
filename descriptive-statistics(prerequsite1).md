@@ -31,7 +31,7 @@ Tip:
 
 A variable is a value that may change or differ between individuals in an experiment. Scores on an intelligence test qualify, since each person may have a different score.
 
-**Note:** Statements about the relationships between variables are called **Hypotheses**. (Ex: 'Students who *sleep* more before an exam tend to get better *marks* in the exam on the next day).
+**Note:** Statements about the relationships between variables are called **Hypotheses**. (Ex: 'Students who *sleep* more before an exam tend to get better *marks* in the exam').
 
 ## Extraneous Factors (Lurking Variables):
 
@@ -76,6 +76,9 @@ The difference between μ (myu) & x̅ (x bar) is called *Sampling Error* `μ - x
 
 A parameter is a characteristic of a population, while a statistic is a characteristic of a sample.
 Therefore, μ (myu) is a **parameter** and x̅ (x bar) is a **statistic**.
+
+Also, the **number** of people/items included in the **sample** is denoted by `n` and going by the above definitions, `n` 
+is also a **statistic**.
 
 Refer: https://www.cliffsnotes.com/study-guides/statistics/sampling/populations-samples-parameters-and-statistics
 

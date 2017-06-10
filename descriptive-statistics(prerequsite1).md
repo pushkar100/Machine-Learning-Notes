@@ -233,6 +233,14 @@ Sometimes, in a histogram, we compromise detail for convenience. For example, tr
 
 **Note**: When we make a bin size larger, more values will fall into that bin and hence, the frequency for that bin increases.
 
+#### Uniform Distribution:
+
+The uniform distribution gets its name from the fact that the probabilities for all outcomes are the same. Every outcome is equally likely to occur. 
+
+The histogram for a uniform distribution will look like a *rectangle*. The frequencies of all the bins/intervals will be the *same (equal)*. For roughly uniform distributions, the frequencies will be very similar (in case they aren't the same).
+
+A deck of cards has a uniform distribution because the likelihood of drawing a heart, a club, a diamond or a spade is equally likely. A coin also has a uniform distribution because the probability of getting either heads or tails in a coin toss is the same.
+
 #### Normal Distribution:
 **Normal Distribution** is a function that represents the distribution of many random variables as a symmetrical bell-shaped graph.
 

@@ -144,6 +144,8 @@ This process helps eliminate bias from the outcome. [The inactive pill is a **pl
 is known as the **placebo effect**. If people know they are taking the placebo then they might subconsciously think that 
 they are not doing anything and hence it will influence the results.]
 
+Basically, placebos can help identify lurking variables(extraneous factors).
+
 Note:
 - Single Blind: Only the participants don't know which pill they are taking. 
 - Double Blind: Even the researchers measuring the participants do not know which pills they have taken. 

@@ -262,6 +262,10 @@ Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/11
 - **Variance** is the *Average* of the *Sum* of the *Squared deviations* divided by `n` (n = the count of the sample set). (In other words, variance is the average of the squared differences from the Mean.)
 - **Standard deviation** is the *Square root* of the *variance*. The Standard Deviation is a measure of how spread out numbers are. Standard deviation is denoted by `σ (sigma)`.
 
+**Bonus:**
+- **Median** is the "middle" of a sorted list of numbers. To find the Median, place the numbers in value order and find the middle. 
+- **Median in the case of even set of numbers:** With an even amount of numbers things are slightly different. In that case we find the middle pair of numbers, and then find the value that is half way between them. This is easily done by adding them together and dividing by two.
+
 **Google sheets functions:**
 - average()
 - sum()

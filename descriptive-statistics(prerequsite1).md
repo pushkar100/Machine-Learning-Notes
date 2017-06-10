@@ -235,11 +235,11 @@ Even on a histogram, the normal distribution would appear like a bell-shaped gra
 #### Skewed Distribution:
 Skewed distribution is the opposite of a normal distribution.
 
-**Positively Skewed Distribution** on a graph means the frequencies are more on the **left side** than on the right. (Also known as right-skewed distribution)
+**Positively Skewed Distribution** on a graph means the frequencies are more on the **left side** than on the *right*. (Also known as **right-skewed** distribution)
 
-**Negatively Skewed Distribution** on a graph means the frequencies are more on the **right side** than on the left. (Also known as left-skewed distribution)
+**Negatively Skewed Distribution** on a graph means the frequencies are more on the **right side** than on the *left*. (Also known as **left-skewed** distribution)
 
-**Note:** The "skew" does **not** refer to the peak but instead to the tapered side (known as the tail). Normal distribution has two tails, one on either side of the peak.
+**Note:** The "skew" does **not** refer to the peak but instead to the tapered side (known as the **tail**). Normal distribution has two tails, one on either side of the peak. In right/positive skew, the tail is more on the positive/right side of x-axis (greater values' side). In the left/negative skew, the tail is more on the negative/left side of the x-axis (lower values' side).
 
 (Refer: http://www.statisticshowto.com/skewed-distribution/)
 

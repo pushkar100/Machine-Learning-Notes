@@ -27,17 +27,18 @@ Tip:
 - *Annual Salary* is a construct since different people might consider it differently, like by USDs, Yens, Property, etc.
 - *Annual Salary in USD* is NOT a construct  since we can measure it in *USDs*.
 
+## Variables:
+
+A variable is a value that may change or differ between individuals in an experiment. Scores on an intelligence test qualify, since each person may have a different score.
+
 ## Extraneous Factors (Lurking Variables):
 
 **Extraneous Factors** are those things that can influence Constructs. (Ex: Sleep factor before taking a memory test).
 If a certain factor is made constant (Like conducting an experiment at the same time when time is considered as a factor), 
-it is better for the outcome/conclusion. (Ex: If everyone takes a memory test at the same time [Acc. to their respective timezones]
-then the results can be trusted better.)
+it is better for the outcome/conclusion. (Ex: If everyone takes a memory test at the same time [Acc. to their respective timezones] then the results can be trusted better.)
 
 The more extraneous factors that are constant, the easier it is to trust the conclusion we arrive at from analysing the data. 
 The reason for this is that these lurking variables usually ambush our results (if they keep varying between each item) (lurking to attack analogy).
-
-**Note:** A variable is a value that may change or differ between individuals in an experiment. Scores on an intelligence test qualify, since each person may have a different score.
 
 ## Population & Sample:
 
@@ -140,6 +141,8 @@ Note:
 - Single Blind: Only the participants don't know which pill they are taking. 
 - Double Blind: Even the researchers measuring the participants do not know which pills they have taken. 
 (Double blind increases the accuracy of the experiment)
+
+Extraneous factors need to be controlled in order to get causal results.
 
 ## Random Assigment:
 

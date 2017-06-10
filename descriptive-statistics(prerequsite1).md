@@ -118,9 +118,9 @@ Advantages of surveys:
 
 Disadvantages of surveys:
 1. Biased responses.
-2. Respondents not understanding the question. (Response bias)
+2. Respondents not understanding the question. (1 & 2 can be called **Response bias** and is a negative aspect of a survey)
 3. Untruthful responses.
-4. Respondents refusing to answer. (Non-response bias)
+4. Respondents refusing to answer. (It is known as **Non-response bias** and is a negative aspect of a survey)
 
 Surveys are used to probe *Constructs* and these constructs can have a lot of definitions. Surveys need to contain carefully worded questions.
 

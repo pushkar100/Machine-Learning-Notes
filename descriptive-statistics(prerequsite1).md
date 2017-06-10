@@ -362,7 +362,7 @@ When odd number of values exist, it is easy to pick the middle one after sorting
 Example: Find median of 5, 3, 7, 10, 4, 6?
 Answer:  Sort them as 3, 4, 5, 6, 7, 10. The middle values are 5 & 6. Median = (5 + 6) / 2 = `5.5`.
 
-**Note**:  Median is known to have a **Robust** tendency. What this means is that it is not affected much by departures from the norm (caused by outliers). Hence, it is more reliable than the mean to calculate the middle point of the distribution when data contains outliers.
+**Note**:  Median is known to have a **Robust** tendency. What this means is that it is not affected much by departures from the norm (caused by outliers). Hence, it is more reliable than the mean to calculate the middle point of the distribution when data contains outliers. (Only slightly affected by outliers).
 
 The median is generally used as a measure whenever we deal with *highly skewed distributions*.
 

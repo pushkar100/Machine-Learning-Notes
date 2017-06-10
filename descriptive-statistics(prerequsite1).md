@@ -1,5 +1,7 @@
 # DESCRIPTIVE STATISTICS NOTES (UDACITY CLASS)
 
+Prerequisite 1 for taking up the Machine Learning Course on Udacity.
+
 # Lesson 1-3: Intro to Research Methods.
 
 The 3 Factors that are always important to conduct a good research:
@@ -181,7 +183,7 @@ Examples where random assignment works well are Gender, Age, Wealth, etc (depend
 
 Random samples are assumed to NOT be biased and treats every perso equally (like mentioned above). Convenience samples are the opposite of random samples since it forms the set of people who are conveniently picked (Example: Friends & relatives). They may be biased and not be representative of the population.
 
-# Lesson 4: Data Visualization
+# Lesson 4-6: Data Visualization
 
 ## Frequency chart: 
 A frequency table is a table that shows the total for each category or group of data. 

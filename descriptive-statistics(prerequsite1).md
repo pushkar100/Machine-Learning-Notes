@@ -251,7 +251,9 @@ Skewed distribution is the opposite of a normal distribution.
 
 (Refer: http://www.statisticshowto.com/skewed-distribution/)
 
+# Lesson 7: Working with Google Spreadsheets
 
+Refer: https://classroom.udacity.com/courses/ud827/lessons/116708348/concepts/1164749820923
 
 
 

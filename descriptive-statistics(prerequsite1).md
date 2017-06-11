@@ -715,3 +715,5 @@ Final answer(proportion between values 4 & 10) = `a2 - a1`.
 **Note**: Relationship between z-score & standard deviation is:
 
 `z = (x - x̅) / σ` where `x` is the value of the point we are calculating z-score (z) for.
+
+**Note**: For calculations for such problems (as above), `*probability* is same as *area* which is same as *proportion(rel. freq.)*`

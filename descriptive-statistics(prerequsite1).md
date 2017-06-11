@@ -205,7 +205,7 @@ The above equation expresses relative frequency as a **proportion**. It is also 
 `percentage = proportion * 100`
 
 **Note:**
-- **All proportion are greater than or equal to `0` and less than or equal to `1` **
+- **All proportion are greater than or equal to `0` and less than or equal to `1`**
 - **The sum of the proportions of all the items in the frequency table must be equal to `1`**
 - **The sum of the percentages of all items in the frequency table must be equal to `100%`**
 
@@ -391,3 +391,142 @@ Therefore:
 - `mean(x̅) < median < mode` for **Negative Skewed Distribution**.
 - `mode > median > mean(x̅)` for **Positive Skewed Distribution**.
 (Sometimes they could be `<=` or `>=` also)
+
+# Lessons 11-12: Variability
+
+Some graphs have almost same mean, mode and median. How do we differentiate between such graphs? 
+
+Imagine two normally distributed graphs with same mean/mode/median. One graph is spread out more while the other hasn't spread out much. We can use this spread as a variable to measure the difference between these two graphs.
+
+## Range of a graph:
+Range of a graph is defined as the difference between its two most extreme values (`highest value - lowest value`) on the *x-axis* (Y-axis generally being the frequency). 
+- If the range is **BIG** then it means that the graph is more **spread out**.
+- If the range is **SMALL** then it means that the graph is more **consistent**.
+
+**Range has a drawback:** If new values are added to the graph then the range might sometimes change. If the new value falls within the existing range then the range remains same. If the new value falls outside the existing range, the range cannot be considered constant.
+
+Therefore, the **variability** of a range is affected by outliers.
+
+### Chopping off the tails:
+Statisticians generally want to avoid the outliers from affecting the range and their calculations. Therefore, we chop off the top 25% and bottom 25% of the graph from our calculations.
+
+Each of the 25% range is known as a `Quartile(Q)`. We discard the first quartile `Q1` (bottom) and `Q4` (top).
+
+The outliers now cannot affect our calculations since our focus will be on `Q2(25%-50%)` & `Q3(50%-75%)`
+
+#### Calculating the Quartiles:
+We need to use **median** to calculate the quartile ranges. Calculate the median number of the whole graph (by adding frequencies if the data representation is a histogram). 
+
+If `A` is the sum of frequencies then value at `A/2` is the median. The first quartile(`Q1`) will be the value present at half the median `(A/4)`. The second quartile(`Q2`) is the value at the median(`A/2`). The third quartile(`Q3`) will be the value present at three quarters of the frequency `(3A/4)`.
+
+Our **new range** (after chopping off the tails) will now be the space **between `Q1` and `Q3`**.
+
+`Q1` is known as the **Lower Quartile**.
+`Q3` is known as the **Upper Quartile**.
+
+(Refer: https://classroom.udacity.com/courses/ud827/lessons/1471748603/concepts/838774410923)
+
+The difference between Q1 & Q3 is known as **Interquartile Range(IQR)**. `IQR = Q3 - Q1`
+
+**Note:**
+- About 50% of data falls within the IQR.
+- It is **not** affected by every value in the dataset. (If the value within the boundary of the IQR changes to a value greater than or less than the IQR range then yes, it is affected, else it is not)
+- It is **not** affected by outliers. Changing the value of outliers does not alter Q1 & Q2.
+
+#### Mathematically Defining Outliers using IQR:
+Not everyone value outside of the IQR can be termed as an outlier. For example, if the range of IQR is from 1000 to 5000 then the values such a 890 and 5600 are not that unexpected or far from the range. Therefore, we need to statistically define what exactly is an outlier.
+
+**Definition:**
+For a value `p` to be considered as an **outlier**, it should obey *either one* of the following inequalities:
+`p < (Q1 - 1.5*IQR)` **or** `p > (Q3 + 1.5*IQR)`
+
+#### Mean and the IQR:
+Generally, the mean does fall within the IQR in most cases. The cases for which the mean **may not** fall under the IQR could be when there a *presence of outliers*. Mean is very sensitive to outliers while the IQR is not affected by them. Hence, in this case the mean might fall outside of the IQR.
+
+#### Boxplots:
+IQR graphs are visualized using a **Boxplot**. It contains a line with a box in the center representing the IQR (`Q1` to `Q3`) with a *line cutting across the box* representing `Q2` (the **median**). The outer line extends in either direction to represent the *minimum* and *maximum* values (Outside of which lie the outliers). Values are represented by **dots** and the *outliers* are represented by **dots outside from the min or max** depending on the value.
+
+(Watch this video: https://www.youtube.com/watch?v=CoVf1jLxgj4)
+
+#### Disadvantage of IQR:
+We used or defined IQR to get rid of the problem caused by outliers to the range. The **range** was initially calculated to measure the **difference in spread** between two graphs with almost same mean, mode and median.
+
+In the IQR, we can *identify the difference in spread without worrying about outliers giving unexpected results*. However, we still cannot determine the type of graph distribution.
+
+There maybe graphs with **same IQR** but **different distributions**. Example: One graph with normal distribution, other with bimodal, and another with uniform. Using just IQR, we cannot differentiate between these types of graphs.
+
+### Better Ways to Calculate Spread:
+Range and IQR both have issues while trying to measure spread. The have too much **variability** or they cannot distinguish between types of graph based on distribution types.
+
+#### Deviation:
+Measuring the deviation from the data value to the **mean** value could provide a way to determine how far apart are the values placed.
+
+Deviation = difference between mean/average (x̅) and the data value for a particular point. 
+
+For a dataset comprising of values: `x1, x2, x3, ..., x(n-1), xn`, the deviation for one of the values (say x(i)) can be defined as: 
+`Deviation = x̅ - x(i)` **OR** `Deviation = x(i) - x̅` (Choose any one and stick to it).
+
+**Average Deviation:**
+Average deviation is the average of the deviations of all the dataset values.
+`Average Deviation = Σ(x̅ - x(i)) / n` where `n` is the size of the sample dataset.
+
+#### Disadvantage of Average Deviation:
+We came up with deviation & average deviation to measure *spread* of distribution (better than range & IQR).
+
+The issue with deviations are that there could be negative values of a deviation based on its value w.r.t the **mean**. Therefore, when you take the **Average deviation** you may end up getting a `0` result (caused because the negative values nullify the positive values). Such a result cannot give us the true deviation/spread.
+
+**Solution:**
+1. Use **Absolute deviations**: `x(i) ~ x̅` or `|x(i) - x̅|`. Then, **Average absolute deviation** would be `Σ(|x(i) - x̅|) / 2`.
+2. Use **Squared deviations** since squaring would remove the negative sign as well. *(This metric is used commonly)*
+
+#### Squared Deviations:
+The formulae for all calculations related to squared deviations are:
+1. A `Squared deviation = (x(i) - x̅)^2` (**Alternately, we can also use** `(x̅ - x(i))^2`. Choose one formula and stick to it)
+2. **Sum of Squared Deviations(SS)** is calculated as follows:  `SS = Σ( (x(i) - x̅)^2 )`
+3. **Average Squared Deviation** is calculated as `SS / n` where `n` is the sample dataset size.
+
+The *Average Squared Deviation* has a special term known as **Variance**. Hence, `Variance = SS / n`.
+
+**Note:** "Variance is the average of all the squared deviations"
+
+**Important:** It is necessary to visualize Variance to understand it. Watch one of the course videos to help you better grasp the concept of variance: https://classroom.udacity.com/courses/ud827/lessons/1471748603/concepts/839344310923)
+
+#### Standard Deviation (σ):
+Once we have variance, we need to find out its square root to get back the deviation (Since we had squared the deviations in the first place - in order to prevent opposite sign deviations from canceling each other and proving useless). This is the standard method of find out the *variability* or *spread* and it is known as the **Standard Deviation** and is denoted by `σ`.
+
+Standard deviation formula: `σ = √(Variance)` (i.e Square root of variance)
+
+#### Why use Standard Deviation(σ)? 
+We can use absolute deviations an find the average. But, standard deviation has a special property that helps us more than absolute deviations.
+
+If we take a **normal distribution** (bell-curve) where `mean = mode = median` and is symmetrical then:
+- **65%** of the data falls between *1 standard deviation of the mean*.
+- **95%** of the data falls between *2 standard deviations of the mean*.
+
+Also:
+- **99%** of the data falls between *3 standard deviations of the mean*.
+
+(Visualization: https://www.youtube.com/watch?v=MoW3hMq-eIc and https://www.youtube.com/watch?v=MRqtXL2WX2M&t=62s)
+
+There is a table that exists for telling how much percentage of data falls within what standard deviations of the mean.
+
+**Note:** Don't forget that standard deviation is a **measure of spread**.
+
+#### Bessel's Correction:
+Generally when considering a sample from a population, we usually take the central part of the distribution (or the central part of the bell curve). Because of this, the standard deviation calculated for the sample will be different (smaller) than the actual standard deviation for the entire population.
+
+**Bessel's Correction** tries to fix the standard deviation calculation for the sample to match that of the population:
+- `Variance = Σ( (x(i) - x̅)^2 ) / (n - 1)` where `n` is the size of the sample.
+- `Standard deviation (s) = √ ( Σ( (x(i) - x̅)^2 ) / (n - 1) )`
+
+**Note:** Bessel's Standard Deviation is represented by *Lowercase `s`*.
+
+(Explanation: Instead of dividing by `n` for variance, we divide by `n-1`. Calculating the square root of  this new variance gives us the Standard Deviation - According to Bessel's correction).
+
+Since the denominator is reducing by `1`, we get **bigger** numbers for Variance & Std. deviation `s`.
+
+**Important:** When to use `s` and `σ`:
+- If you have the population data and need to find the **standard deviation of the population** then we use `σ`.
+- If you have a sample data set and need to **estimate the standard deviation of the population using the sample** then we use `s`.
+
+**Note:** that for a small data set (which is **not** a sample estimating a population), we still use `σ`.

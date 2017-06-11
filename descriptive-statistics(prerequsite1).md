@@ -720,5 +720,5 @@ Final answer(proportion between values 4 & 10) = `a2 - a1`.
 `z = (x - x̅) / σ` where `x` is the value of the point we are calculating z-score (z) for.
 
 **Note**: For calculations for such problems (as above):
-- `*probability* is same as *area* which is same as *proportion(rel. freq.)*`
-- `If an (*area* between -infinity up to a point x) is M then the *percentile* of that point x is also M`
+- *probability* is same as *area* which is same as *proportion(rel. freq.)*
+- If an (*area* between -infinity up to a point x) is M then the *percentile* of that point x is also M

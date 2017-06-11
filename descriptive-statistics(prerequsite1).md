@@ -608,8 +608,6 @@ One standard deviation will have a Z-score of `1`. How?
 
 Two Standard deviations: `z = 2` (positive) & `z = -2` (negative) (.. so on)
 
-Normal distribution with Z-
-
 **Remember:**
 - 65% of the data falls between 1 standard deviation of the mean.
 - 95% of the data falls between 2 standard deviations of the mean.
@@ -633,3 +631,5 @@ Using `z = 0.56`, we can come up with a new distribution for popularity by assum
 `Popularity mean (pm) = 50, Popularity σ (pσ) = 10` **(say)**
 
 Therefore, `Popularity score = pm + z*pσ = 50 + 0.56*10 = 55.6`
+
+**Note:** Standard deviation is big if the spread of the distribution is large.

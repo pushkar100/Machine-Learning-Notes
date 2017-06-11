@@ -633,5 +633,6 @@ Using `z = 0.56`, we can come up with a new distribution for popularity by assum
 Therefore, `Popularity score = pm + z*pσ = 50 + 0.56*10 = 55.6`
 
 **Note:** 
-- Standard deviation is big if the spread of the distribution is large.
-- Z-scores of two things from different normal distribution graphs (std normal distributions) can be compared (we can identify which one if further away from the mean than the other based on z-score)
+- **Standard deviation** is *large* if the **spread** of the distribution is *large*.
+- **Z-scores** of two values from two different normal distribution graphs (std normal distributions) can be *compared* (we can identify which one if further away from the mean than the other based on z-score)
+- **Standard deviation** *cannot be negative* (We consider the absolute value). But, **Z-score** *can be negative*.

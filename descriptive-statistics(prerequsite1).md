@@ -645,9 +645,13 @@ The area under the curve is called the **Probability Density Function(PDF)** wri
 
 In a Normal distribution, the tails actually *never* touch the x-axis but only get closer and closer to it. The tails then become **Horizontal Asymptotes**.
 
-**Note:** The area under the curve represents the probability of a random value falling under that area (within the range of the values) **(Important!)**
+**Note:** The area under the curve represents the probability of a random value falling under that area (within the range of the values). 
 
 Example: If there is a normal distribution of the heights of 7 year olds with mean 125 cm (x-axis = height, y-axis = relative frequency) then say the area below the value 120 is 0.14, the probability of picking a random girl whose height is less than 120 is also 0.14.
+
+**(Important!)** Here, *area* and *proportion* values are similar. 
+- Proportion of values less than a point x means: (Area from -infinity upto that point x).
+- Proportion between two points x1 and x2 means: (Area from -infinity upto that point x2) - (Area from -infinity upto that point x1).
 
 **Note:**
 The graph we are looking at: 

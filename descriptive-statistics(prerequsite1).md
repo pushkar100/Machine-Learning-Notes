@@ -706,3 +706,8 @@ Answer:
 Final answer(proportion between values 4 & 10) = `a2 - a1`.
 
 **An app that helps visualize the area under the curve:** http://psych.colorado.edu/~mcclella/java/normal/handleNormal.html
+
+
+**Note**: Relationship between z-score & standard deviation is:
+
+`z = (x - x̅) / σ` where `x` is the value of the point we are calculating z-score (z) for.

@@ -645,6 +645,8 @@ The area under the curve is called the **Probability Density Function(PDF)** wri
 
 In a Normal distribution, the tails actually *never* touch the x-axis but only get closer and closer to it. The tails then become **Horizontal Asymptotes**.
 
+**Note:** The area under the curve represents the probability of a random value falling under that area (within the range of the values) **(Important!)**
+
 **Note:**
 The graph we are looking at: 
 - `x-axis` has z-scores or std. deviations(σ), and

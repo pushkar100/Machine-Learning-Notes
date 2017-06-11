@@ -653,6 +653,9 @@ Example: If there is a normal distribution of the heights of 7 year olds with me
 - Proportion of values less than a point x means: (Area from -infinity upto that point x).
 - Proportion between two points x1 and x2 means: (Area from -infinity upto that point x2) - (Area from -infinity upto that point x1).
 
+**(Important!)** Here, *area* and *percentile* values are similar. 
+- If an (area covered by -infinity up to a point x) is `M` then the *percentile of x* is also `M`.
+
 **Note:**
 The graph we are looking at: 
 - `x-axis` has z-scores or std. deviations(σ), and
@@ -716,4 +719,6 @@ Final answer(proportion between values 4 & 10) = `a2 - a1`.
 
 `z = (x - x̅) / σ` where `x` is the value of the point we are calculating z-score (z) for.
 
-**Note**: For calculations for such problems (as above), `*probability* is same as *area* which is same as *proportion(rel. freq.)*`
+**Note**: For calculations for such problems (as above):
+- `*probability* is same as *area* which is same as *proportion(rel. freq.)*`
+- `If an (*area* between -infinity up to a point x) is M then the *percentile* of that point x is also M`

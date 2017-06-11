@@ -647,6 +647,8 @@ In a Normal distribution, the tails actually *never* touch the x-axis but only g
 
 **Note:** The area under the curve represents the probability of a random value falling under that area (within the range of the values) **(Important!)**
 
+Example: If there is a normal distribution of the heights of 7 year olds with mean 125 cm (x-axis = height, y-axis = relative frequency) then say the area below the value 120 is 0.14, the probability of picking a random girl whose height is less than 120 is also 0.14.
+
 **Note:**
 The graph we are looking at: 
 - `x-axis` has z-scores or std. deviations(σ), and

@@ -636,3 +636,69 @@ Therefore, `Popularity score = pm + z*pσ = 50 + 0.56*10 = 55.6`
 - **Standard deviation** is *large* if the **spread** of the distribution is *large*.
 - **Z-scores** of two values from two different normal distribution graphs (std normal distributions) can be *compared* (we can identify which one if further away from the mean than the other based on z-score)
 - **Standard deviation** *cannot be negative* (We consider the absolute value). But, **Z-score** *can be negative*.
+
+# Lessons 16-17: Normal Distribution
+
+Finding the area under the curve of a normal distribution - When using a continuous distribution (that theoretical curve). 
+
+The area under the curve is called the **Probability Density Function(PDF)** written in equations as `f(x)` (We are not learning the equation).
+
+In a Normal distribution, the tails actually *never* touch the x-axis but only get closer and closer to it. The tails then become **Horizontal Asymptotes**.
+
+**Note:**
+The graph we are looking at: 
+- `x-axis` has z-scores or std. deviations(σ), and
+- `y-axis` has the relative frequencies (proportion or percent).
+The distribution is a *normal distribution* with z-scores (0 = mean) like in here: http://davidmlane.com/hyperstat/z_table.html
+
+The total proportion (sum of proportions) of data values under the curve = `1` (Always = no matter the spread).
+
+**Refresher**:
+- `0.65` proportion of the data falls between 1 standard deviation of the mean.
+- `0.95` proportion of the data falls between 2 standard deviations of the mean.
+- `0.99`  proportion of the data falls between 3 standard deviations of the mean.
+
+**Also**:
+- `0.5` proportion of the data is *below* the mean(x̅).
+- `0.5` proportion of the data is *above* the mean(x̅).
+
+**Problem 1**: What is the proportion of values that fall either *below or above* the first std. deviation from the mean? 
+**Answer**: `1 - 0.68 = 0.32`
+
+**Problem 2**: What is the proportion of values that fall *below* the first std. deviation from the mean? 
+**Answer**: `(1 - 0.68) / 2 = 0.16` (Normal distribution is symmetrical)
+
+**Problem 3**: What is the proportion of values that fall *above* the second std. deviation from the mean? 
+**Answer**: `(1 - 0.95) / 2 = 0.025` (Normal distribution is symmetrical)
+
+**Problem 3**: What is the proportion of values that fall *above* the negative 2nd std. deviation but *below* the positive 1st std. deviation from the mean? 
+**Answer**: `( 0.68 + ((0.95 - 0.68) / 2) ) = 0.815` (Normal distribution is symmetrical)
+
+#### Z-table:
+It is a table used to find the proportion of values between any points (including from infinity to a particular point) that is represented by a **Standard, Normal Curve** *Bell curve*.
+
+Link to the Z-table: https://s3.amazonaws.com/udacity-hosted-downloads/ZTable.jpg
+
+(On this table, `z` represents the z-score of the point that we are interested in (for mean = 0, 1std dev. = 1, 2std dev. = 2, etc) and gives us the *proportion of values from -infinity to that point*)
+
+We know the proportions for values between 1st Std. deviation on either side(0.68), values between 2nd Std. deviation on either side(0.95), and so on. But, to calculate the proportions for any value we need to check the z-table (A formula also exists but we will not be learning it).
+
+**The z-table gives the proportion of values *less* than a value with z-score `z`**
+
+(**How to read the z-table: **https://classroom.udacity.com/courses/ud827/lessons/1478678538/concepts/1020887970923)
+
+Example: Find the proportion of data *less* than 10 (mean = 6, std dev = 3)
+Answer:
+1 + (10-9)/3 = 1 + 1/3 = 1.33 = z-score. Use this `z` to look up the z-table.
+
+Example: Find the proportion of data *greater* than 10 (mean = 6, std dev = 3)
+Answer:
+1 + (10-9)/3 = 1 + 1/3 = 1.33 = z-score. Use this `z` to look up the z-table. Now, after getting the proportion from the table, we need to subtract it from the total proportion (1) to get the answer (since z-table gives value less than a z-score but here we are finding for greater than).
+
+Example: Find the proportion of data *between* 4 (mean = 6, std dev = 3) and 10.
+Answer:
+0 - (6-4)/3 = -2/3 = -0.66 = z-score = `z1`. Use this `z1` to look up the z-table. (say, `a1`).
+1 + (10-9)/3 = 1 + 1/3 = 1.33 = z-score = `z2`. Use this `z2` to look up the z-table. (say, `a2`).
+Final answer(proportion between values 4 & 10) = `a2 - a1`.
+
+**An app that helps visualize the area under the curve:** http://psych.colorado.edu/~mcclella/java/normal/handleNormal.html

@@ -508,6 +508,10 @@ Also:
 
 (Visualization: https://www.youtube.com/watch?v=MoW3hMq-eIc and https://www.youtube.com/watch?v=MRqtXL2WX2M&t=62s)
 
+**Math:**
+- `1 standard deviation = mean(x̅) +/- 1σ`
+- `2 standard deviation = mean(x̅) +/- 2σ` .. and so on.
+
 There is a table that exists for telling how much percentage of data falls within what standard deviations of the mean.
 
 **Note:** Don't forget that standard deviation is a **measure of spread**.

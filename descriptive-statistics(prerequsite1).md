@@ -534,3 +534,102 @@ Since the denominator is reducing by `1`, we get **bigger** numbers for Variance
 - If you have a sample data set and need to **estimate the standard deviation of the population using the sample** then we use `s`.
 
 **Note:** that for a small data set (which is **not** a sample estimating a population), we still use `σ`.
+
+# Lessons 13-15: Standardizing
+
+Mean, Median and Mode give valuable data but there is some information that even these and standard deviation cannot help us with. For example, say you are a rated chess player and you want to know how many people you are better than as per your rating?
+
+Depending on the distribution on the graph, we can tell what proportion or percentage of people you are better than at chess.
+
+Percentage and proportions fall under the bracket of **Relative frequency**.
+
+Up until now, we have been using the **Absolute frequencies** on the `Y-axis`. We can also picture **Relative frequencies** on the `Y-axis` by marking *proportion* or *percentage* frequency instead of the absolute/actual frequency values.
+
+**The relative frequency distribution will look exactly similar to the absolute frequency distribution.**
+
+#### Finding certain proportion of the sample that falls between two bin values:
+Using the relative frequency graph, we can **sum the relative frequencies that appear within the bins specified**. This sum gives us the **proportion** (or **percentage**) of the total sample that falls within the specified values. (Imagine doing this on a histogram).
+
+#### Disadvantage of Relative Frequency:
+If we wanted to calculate the proportion of items falling within a range where the range limits are not the bin intervals (but fall within the bins) then it is difficult to be certain (Cannot give an exact proportion).
+
+**Solution: Make the bin sizes smaller.** 
+
+There is a drawback: Further decreasing the bin sizes can remove the shape of the distribution. (Think of bin sizes being so low that their frequencies are either 1 or 0 - rectangular-ish graph, shape of distribution lost)
+
+### Continuous Distribution:
+Instead of reducing the bin sizes, we can use a theoretical model. We map the distribution to a **theoretically continuous distribution** that represents the same (Shape is maintained). 
+
+This distribution can be represented by mathematical formula. And, since it is continuous, it becomes easy to find the *proportions & percentages in more detail*.
+
+(Visualize a continuous distribution: http://www.milefoot.com/math/stat/images/disccont.gif)
+
+**Note:**
+- In a continuous distribution, the *total area* under the curve must be equal to `1`.
+- This follows from the fact that in a normal histogram too the relative frequencies of all bins add up to `1`.
+- We can get *pretty good approximations* from the theoretical continuous distribution.
+
+### Standardized Score:
+Consider a **normal distribution** (`mean = mode = median = the peak`) . A continuous normal distribution would look something like this:
+(https://onlinecourses.science.psu.edu/stat200/node/38)
+
+Now consider this problem: How do we find how far or near a point (say, x) is from the mean(x̅) in terms of standard deviation(σ)? 
+
+**Answer**: 
+- x is `(x - x̅)/σ` standard deviations *above* x̅ if `x > x̅`
+- x is `(x̅ - x)/σ` standard deviations *below* x̅ if `x < x̅`
+
+**How does this value matter?**
+Take an example of two people, one with number of facebook friends who are 3.5 standard deviations(σ) below the mean(x̅) number of facebook friends and the other with number of twitter followers who are 2.7 standard deviations(σ) below the mean(x̅) number of twitter followers. Who is more unpopular?
+
+**Answer:** User one (with less facebook friends) is more unpopular because he deviates 3.5 times more than 
+the standard deviation whereas user 2 deviates only 2.7 times it.
+
+#### Z-score:
+The Z-score ('zee score') is the number of standard deviations that any value is away from the mean.
+
+`z = (x - x̅)/σ` where `x` is the value under consideration. (We always minus the mean from the value for z-score)
+
+**Note:**
+- If `z` is *negative*, the value is *smaller* than the mean.
+- If `z` is *zero*, the value is equal to the mean.
+- If `z` is *positive*, the value is *larger* than the mean.
+
+**Negative z-score does *not* mean that the value itself is negative, and a Positive z-score does *not* mean that the value itself is positive (z-score cannot determine either of this)**.
+
+##### Mean(x̅) in terms of Z-score:
+The mean(x̅) minus itself will return `0`. Therefore, z-score for mean(x̅) is `0`.
+
+#### Standard Deviation(σ) in terms of Z-score:
+One standard deviation will have a Z-score of `1`. How?
+
+`X-axis value of 1σ = x̅ + σ` (assuming positive deviation)
+`z = (x̅ + σ - x̅) / σ = (σ / σ) = 1`
+
+Two Standard deviations: `z = 2` (positive) & `z = -2` (negative) (.. so on)
+
+Normal distribution with Z-
+
+**Remember:**
+- 65% of the data falls between 1 standard deviation of the mean.
+- 95% of the data falls between 2 standard deviations of the mean.
+- 99% of the data falls between 3 standard deviations of the mean.
+
+If m = 1σ (One std. deviation) then how much is Nm (N times the std. deviation)? Answer: `(N * 1σ)`
+
+### Standard Normal Distribution:
+**Standard Normal Distribution** is a *Normal Distribution* with:
+- a mean (central value) of `0` and 
+- a standard deviation of `1`.
+
+We can take any normal distribution, convert it to the standard normal distribution and scale it any way we want. For example, if we have facebook statistics from which we want to calculate the popularity of a person, we can do the following:
+
+`Facebook friends = x = 210, mean(μ) = 190, σ = 36` **(Given)**
+
+Therefore, `z-score of x = (210 - 190) / 36 = 0.56`
+
+Using `z = 0.56`, we can come up with a new distribution for popularity by assuming a mean and a standard deviation. In this way, we can score the person based on popularity score.
+
+`Popularity mean (pm) = 50, Popularity σ (pσ) = 10` **(say)**
+
+Therefore, `Popularity score = pm + z*pσ = 50 + 0.56*10 = 55.6`

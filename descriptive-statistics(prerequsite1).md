@@ -722,3 +722,75 @@ Final answer(proportion between values 4 & 10) = `a2 - a1`.
 **Note**: For calculations for such problems (as above):
 - *probability* is same as *area* which is same as *proportion(rel. freq.)*
 - If an (*area* between -infinity up to a point x) is M then the *percentile* of that point x is also M
+
+# Lessons 18-19: Sampling Distributions
+
+We can compare the values in a sample with other values within the sample, we can compare values in a population with other values within the population. (We just solved for area, probability, proportion, percentile and percentage on a normal distribution curve).
+
+**How do we compare one whole sample from another?**
+
+**Expected Value**: a predicted value of a variable, calculated as the sum of all possible values each multiplied by the probability of its occurrence.
+
+Example: In a tetrahedral die with values 1, 2, 3, and 4, the expected value or mean for the roll of the die is: 
+
+`sum(eachpossibleoutcome*likelihoodofoccurring)` 
+
+(**OR, also:** `sum of all the outcomes / number of outcomes`)
+
+Each value can appear just as much as the occur (equal likelihood). 
+
+`1 x 1/4 + 2 x 1/4 + 3 x 1/4 + 4 x 1/4 = 2.5`
+
+`2.5` cannot possibly occur on a tetrahedral die. Therefore, the expected value *need not* be a value that should occur.
+
+### Mean of the sample means(M):
+The **mean of the sample means(`M`)** can be used to compare the means of the individual samples to know how far off or close it is to the population.
+
+`M` is calculated by finding the average of all the sample means.
+
+Distribution of sample = **sampling distribution** and it is the distribution of the means of all the samples in the population.
+
+Mean of the sample means(Mean of the sampling distribution) is in the **center** and the **distribution is a Normal Distribution**.
+
+It is tedious to calculate all sample means and find the mean of means (M) and sometimes even impossible to do so when the samples of the population are not discrete.
+
+- Mean of *all values* in a population = `μ`
+- Mean of *all the samples means* in a population = `M`
+- And, importantly: `M = μ`
+
+**Note:**
+- Standard deviation of a `value from the mean` in a population/sample = `σ` 
+- Standard deviation of a `sample mean` from the `mean of all sample means(M)` = `SE`  (*Std. Deviation of Distribution of Sample Means*)
+
+#### Relationship between `σ` & `SE`:
+`σ / SE = √n` where `n` is the sample size.
+
+### Central Limit Theorem:
+The central limit theorem states that the sampling distribution of the mean of any independent, random variable will be normal or nearly normal, if the sample size is large enough.
+
+By this theorem, the ratio of `σ` to `SE` will always be `√n`.
+
+The `Std. Deviation` of sample means from `M` is represented by `se` and it is also called **Standard Error(SE)**.
+
+**Remember:**
+- Mean of the sample means(Mean of the sampling distribution) is in the **center** and the **distribution is a Normal Distribution**.
+
+**Formulae**:
+-  The **mean of the sampling distribution(M)** will be the same as the **mean of the population(μ)**
+- `σ / SE = √n` where `n` is the sample size.
+
+**Will increasing the sample size `n` decrease the spread of the normal distribution or not?**
+
+Answer: It will. The reason is that by increasing `n`, `√n` denominator value will increase in `σ / √n = SE` and so the standard error decreases (the deviation from the mean of sample means decreases). Hence, we get *skinnier* graphs.
+
+In conclusion: Greater the sample size `n` skinnier the graph (*inversely proportional*). In other words, **as the sample size (n) increases the standard error (SE) decreases**.
+
+**Therefore: As the sample size (n) increases the sampling distribution gets skinnier**.
+
+**Important: We can have any population of any shape and if we plot the distribution of its sample means, we get a normal distribution! (More and more normal as n increases) : Central Limit Theorem**
+
+#### Central Limit Theorem Revisited:
+What the theorem says is:
+- The distribution of sample means is approximately normal.
+- The standard deviation (SE) of sample means is approx. `σ / √n`
+- Mean of the sample means is equal to the population mean (μ).

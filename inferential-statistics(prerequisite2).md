@@ -43,3 +43,8 @@ The `x-axis` points `(x̅ - z(σ/√n)` and `(x̅ + z(σ/√n)` define the Y% Co
 Also:
 - `Confidence interval upper bound = sample mean + margin of error`
 - `Confidence interval lower bound = sample mean - margin of error`
+
+### Understanding Confidence Interval:
+Let us take an example where a teacher has the mean marks of her students to be 68% (μ) with σ = 10%. She tries out a new interactive method of teaching with a sample of 25 students who get a mean mark of 75%. By finding the 95% confidence interval ({sample mean - margin of error, sample mean + margin of error}), we get to know that majority (95%) of students of the complete class (not just sample 25 students) will have marks between 71% & 78%. This is a 3-10% increase in the mean marks.
+
+If the teacher continues the new way of teaching, the mean exam score is likely to be between those bounds.

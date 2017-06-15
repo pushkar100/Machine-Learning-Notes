@@ -39,3 +39,7 @@ Therefore, the margin of error/95% confidence interval lies between `-1.96` and 
 
 ### Formula for calculating Y% Confidence Interval:
 The `x-axis` points `(x̅ - z(σ/√n)` and `(x̅ + z(σ/√n)` define the Y% Confidence interval where `z` is the z-score for that `x` value.
+
+Also:
+- `Confidence interval upper bound = sample mean + margin of error`
+- `Confidence interval lower bound = sample mean - margin of error`

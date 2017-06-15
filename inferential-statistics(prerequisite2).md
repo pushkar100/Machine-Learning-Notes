@@ -1,5 +1,5 @@
 
-# Lessons 1-2: Estimation
+# Lessons 1-3: Estimation
 
 ### Point Estimate:
 A single value given as an estimate of a parameter of a population.
@@ -12,8 +12,10 @@ As an example of a point estimate, assume you wanted to estimate the mean time i
 
 The estimate occurs as a result of point estimation applied to a set of sample data. Points are single values, in comparison to interval estimates, which are a range of values. For example, a confidence interval is one example of an interval estimate.
 
+**Point estimates do not account for sampling error!**
+
 ### Margin of Error:
-The **margin of error** is defined as the interval between the mean and the (2σ/√n) deviations (*Two standard deviations*).
+The **margin of error** is defined as the absolute distance between the mean and the (2σ/√n) deviations (*Two standard deviations*).
 
 Therefore, margin of error contains **95%** of the values. That is, greater than `μ - (2σ/√n)` but less than `μ + (2σ/√n)`.
 

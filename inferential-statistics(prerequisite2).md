@@ -35,3 +35,5 @@ Therefore, the margin of error/95% confidence interval lies between `-1.96` and 
 - `+/- 1.96` are the **CRITICAL VALUES** of Z for **95%** CI.
 - `+/- 2.33` are the **CRITICAL VALUES** of Z for **98%** CI.
 
+### Formula for calculating Y% Confidence Interval:
+The `x-axis` points `(x̅ - z(σ/√n)` and `(x̅ + z(σ/√n)` define the Y% Confidence interval where `z` is the z-score for that percentage value.

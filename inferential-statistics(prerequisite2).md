@@ -15,7 +15,7 @@ The estimate occurs as a result of point estimation applied to a set of sample d
 **Point estimates do not account for sampling error!**
 
 ### Margin of Error:
-The **margin of error** is defined as the absolute distance between the mean and the (2σ/√n) deviations (*Two standard deviations*).
+The **margin of error** is defined as the absolute distance between the mean and *two standard deviations*.
 
 Therefore, margin of error contains **95%** of the values. That is, greater than `μ - (2σ/√n)` but less than `μ + (2σ/√n)`.
 

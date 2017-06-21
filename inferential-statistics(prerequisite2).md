@@ -49,7 +49,7 @@ Let us take an example where a teacher has the mean marks of her students to be 
 
 If the teacher continues the new way of teaching, **the mean exam score is likely to be between those bounds.**
 
-## Lessons 4-5: Hypothesis Testing
+# Lessons 4-5: Hypothesis Testing
 
 ### Levels of (Un)likelihood:
 There are 3 levels of unlikelihood, known as **α (alpha) symbols**:

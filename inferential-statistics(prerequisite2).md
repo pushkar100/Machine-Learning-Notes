@@ -136,7 +136,7 @@ Example: H0 = Beverage is fine to drink now, HA = Beverage is too hot to drink n
 - If you think the beverage is too hot and you wait to drink it but it turns out to be cold by the time you do so - You rejected H0 but H0 was true - Therefore: `Type I error`.
 - If you think the beverage is fine to drink but it turns out to be hot and burns your tongue - You retained H0 but H0 was false - Therefore: `Type II error`.
 
-### t-Distribution:
+# Lessons 6-7: t-Distribution:
 
 We usually calculate the position of a sample mean on the distribution relative to the population mean `μ` and standard deviation `σ`.
 

@@ -144,6 +144,8 @@ Many times, we **do not know** the population mean and standard deviation. We on
 
 We can use a new distribution known as `t-Distribution` which does **not** depend on `σ`. This `t-Distribution` is, however, more prone to error!
 
+**t-tests are used when we do not know the population parameters whereas z-tests are used when we know them**
+
 The **t-Distribution** is more *spread out* and *thicker in the tails* than a regular sample distribution (picture a normal curve but more spread out with the peak smaller than in a regular sample distribution).
 
 **Calculating the `t-score`:**

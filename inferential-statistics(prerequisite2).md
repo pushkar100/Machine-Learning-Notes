@@ -135,3 +135,112 @@ Example: H0 = Beverage is fine to drink now, HA = Beverage is too hot to drink n
 
 - If you think the beverage is too hot and you wait to drink it but it turns out to be cold by the time you do so - You rejected H0 but H0 was true - Therefore: `Type I error`.
 - If you think the beverage is fine to drink but it turns out to be hot and burns your tongue - You retained H0 but H0 was false - Therefore: `Type II error`.
+
+### t-Distribution:
+
+We usually calculate the position of a sample mean on the distribution relative to the population mean `μ` and standard deviation `σ`.
+
+Many times, we **do not know** the population mean and standard deviation. We only have a sample set of data with us. In this case, we cannot calculate the z-score (`(sample mean - population mean) / SE`) because *SE depends on σ* (`SE = σ / √n`).
+
+We can use a new distribution known as `t-Distribution` which does **not** depend on `σ`. This `t-Distribution` is, however, more prone to error!
+
+The **t-Distribution** is more *spread out* and *thicker in the tails* than a regular sample distribution (picture a normal curve but more spread out with the peak smaller than in a regular sample distribution).
+
+**Calculating the `t-score`:**
+- Since we are dealing with a sample and not population,  we have the Standard deviation of the sample: `S = √(Σ(xi - x̅)² / (n - 1))` (We use n-1 if it is sample and not population - bezzel's correction)
+- Now, we can calculate the **t-score** as: `t = Mean Difference / SE`
+- `SE` (Standard error) will depend on `S` and *not* the population std. dev. `σ`. 
+- `SE = S / √n` (? re-check)
+
+### Degrees of Freedom:
+In statistics, the number of degrees of freedom is the *number of values* in the final calculation of a statistic that are *free to vary*.
+
+**Example 1:** You have to choose `n` numbers. What is the degree of freedom?
+
+Answer 1: We do not have any restriction on picking a number. So, while picking a number, we are free to pick any choice (vary). Picking each number adds to the Degree of freedom. Therefore, `DoF = n`.
+
+**Example 2:** You have to map 3 subjects (a, b, and c) to 3 hours of study with each subject requiring one hour. What is the DoF?
+
+Answer 2: The first slot can be either a, b or c (say, we select a). We have the freedom of choice. The second slot depends on what was selected for the first and are still left with two options (b and c). We have a choice between two (and say we choose b). Only for the last slot are we forced to select one (c). Therefore, `DoF = 2`.
+
+**Example 3:** Choose n numbers (+/-) such that sum = 10. What is the DoF?
+
+Answer 3: Let n = 4, assuming negative numbers are also allowed, we can choose any number as first. Second also has a choice. Third as well. But, fourth is forced. Therefore DoF = 4 - 1 = 3. In general, `DoF = n - 1`. Ex: Let x1 = 3(our choice). Now, x2 + x3 + x4 = 7. Let x2 = 10 (our choice). x3 + x4 = -3. Let x3 = 5 (our choice). x4 = -8 (forced). Only last number selected was forced.
+
+#### Degrees of Freedom and Standard Deviation of a Sample:
+When selecting data points for a sample from a population, we can choose any `n` values to construct a sample size of `n`. But, what about the mean of the sample (`x̅`)?
+
+`( x1 + x2 + ... + xn ) / n = x̅`
+
+Suppose we want a sample data set with a **particular** sample mean `x̅`. Then what is the DoF in selecting the `n` data points? 
+
+`x1 + x2 + ... + xn = x̅.n`
+
+We have to make sure that the *sum of the `n` values matches `x̅.n`. This is similar to the problem of selecting the `n` values that add up to a given sum. Therefore, `DoF = n - 1` (Since only last `n` value is a forced selection).
+
+The reason why we use `n - 1` for calculating the SD for a sample set is because only these values vary instead of all them varying. (But, for a population we have all the values available and so we don't have to do any correction).
+
+`S = √(Σ(xi - x̅)² / (n - 1))` for a sample where `S` is Std. Dev. of the sample.
+
+### How to read the t-table:
+How to read the t-table (It is different from z-table and uses degrees of freedom):? Refer: https://classroom.udacity.com/courses/ud201/lessons/1333678604/concepts/1470192730923
+
+With a z-table, we found out the z-score and compared it to z-critical values. Using a **t-table**, we find out the **t-statistic** and compare it to the **t-critical values**.
+
+**Note:**
+- We can have **one-tailed tests** or **two-tailed tests** with `t-table` just like we did with the z-table scores.
+- We can specify the `α` alpha levels (0.05, 0.01 ... etc) when calculating t-scores.
+- `α` (alpha) levels indicate the area under the critical regions. Area/Proportion/Percentage/Probability.
+- **Important:** If we are using the **two-tailed test** then we have to *split the α alpha value given by 2* and calculate the +/- t-scores for the same.
+
+`t-table` column headers : Probability/α aplha levels/Proportion/Percentage
+
+`t-table` row headers : Degrees of Freedom (which is `DoF = n - 1` for sample size `n`)
+
+`t-table` cells : `t-scores` or `t-statistic`.
+
+**Note: Calculating the t-statistic/t-score**
+- `t-score` for the population `mean = 0`
+- We *reject the null* if the `t-score`  is too far from the mean in either direction.
+- `t = (x̅ - μ0) / SE` where `μ0` is population mean, x̅ is sample mean and SE is the *standard error (of the sample means)*.
+- Remember that `SE = S / √n` where S is the std. dev. of the sample.
+- Also remember that `S = √(Σ(xi - x̅)² / (n - 1))` since S is a std. dev. of the sample (and not the population).
+- `x̅`  comes from population with mean `μ` and std. dev `σ`.
+
+**Note:** 
+- The **larger** the value of x̅, the stronger the evidence that: `μ > μ0` since t-statistic increases.
+- The **smaller** the value of x̅, the stronger the evidence that: `μ < μ0` since t-statistic decreases.
+- The **further** the value of x̅ from the mean `μ0`, the stronger the evidence that: `μ != μ0` since t-statistic is nowhere close to `0`.
+
+Here, we represent the actual population mean as`μ0`. We use `μ` to depict the possible mean of the population assuming that the sample with mean `x̅` is an accurate representation of the population (`x̅ = μ`).
+
+`t = (x̅ - μ0) / SE` is also known as **One sample t-test**.
+
+For a **t-test**:
+- The **null hypothesis** is `μ = μ0`
+- The **alternate hypotheses** are: `μ > μ0`, `μ < μ0` and `μ != μ0`.
+(Same as for z-scores)
+
+**Note: Just like we calculated y% confidence interval using z-scores, we can calculate CIs using t-statistics as well.**
+
+`Margin of error = CI / 2 = t * SE = t * (S/√n)`
+
+**Note: Just like z-scores, we can think of t-statistics as the NUMBER OF STANDARD ERRORS.**
+
+#### P-value:
+P value (for a particular t-statistic) is defined as the probability of getting that t-statistic.
+
+P-value represents the probability of getting a value *above* the positive value of the t-statistic (if positive tail is considered) in a  **one-tailed test.** .
+
+P-value represents the probability of getting a value *below* the negative value of the t-statistic (if negative tail is considered) in a  **one-tailed test.** .
+
+P-value actually represents the probability of getting a value *above* the positive value of the t-statistic and a value *below* the negative value of the t-statistic (i.e on both sides) of a **two-tailed test.**
+
+**We reject the null hypothesis when the p-value is less than the `α` alpha level**
+
+(Watch: https://classroom.udacity.com/courses/ud201/lessons/1333678604/concepts/1479057640923)
+
+**Note: Cohen's d:**
+`Cohen's d = (x̅ - μ0) / S` (Does not use standard error but std.dev. of the sample). It is a standardized mean difference that measures the distance between means in standardized units.
+
+

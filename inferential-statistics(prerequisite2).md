@@ -245,4 +245,27 @@ P-value actually represents the probability of getting a value *above* the posit
 **Note: Cohen's d:**
 `Cohen's d = (x̅ - μ0) / S` (Does not use standard error but std.dev. of the sample). It is a standardized mean difference that measures the distance between means in standardized units.
 
+### t-tests for Paired Samples:
+Until now we had been dealing with t-tests for **a** sample. Can we use t-tests to compare two samples? Yes! We can compare the differences between the two samples. Example: Difference between number of errors using a qwerty keyboard (sample 1) and using an alphabetical keyboard (sample 2). For paired samples, we take two samples and perform t-tests w.r.t the differences between the samples' values. We have a procedure for comparing the data from the two samples (particularly the **differences** between the values).
 
+1. Within-Subject Designs:
+	- Two conditions
+	- Pre-test, Post-test
+	- Growth over time (longitudinal study)
+
+**Procedure:**
+- First test values: `xi`
+- Corresponding second test values: `yi`
+- Difference between them: `Di = xi ~ yi` (Absolute difference)
+- We find the mean (average) of the differences.
+- Then we find the standard deviation (S) of the differences (from the mean of the difference). Procedure: Minus mean of diffs from each diff. Square them. Sum them up & divide by n-1 (since it is a sample). Taking square root of this should give us the standard deviation of the differences.
+- We can calculate the the t-statistic as: `t = (x̅ - ȳ)/SE = (x̅ - ȳ)/(S/√n)` where `x̅` = mean of the 1st sample values and `ȳ` = mean of the 2nd sample values. `S` is the standard deviation of the differences between corresponding x and y values, found in the previous step. `n` is the sample size.
+- Confidence Interval: `CI = (x̅ - ȳ) +/- Tc*(S/√n)` where `Tc` is the t-critical value for that confidence interval (Note: t-critical values are the limits of the CIs and it is not the t-statistical value that we calculate!).
+- `x̅ - ȳ` is also known as the **Mean Difference**.
+
+The **Null Hypothesis** can be written as `μ1 - μ2 = 0` (Both samples are similar) and **Alternate hypothesis** as `μ1 - μ2 != 0` (One sample is significantly different from the other). 
+
+Another way of representing difference in hypotheses: `μD = μ1 - μ2`.
+Therefore, **Null Hypothesis: `μD = 0`** and **Alternate hypothesis: `μD != 0`**.
+
+**Note:** The paired sample tests involve **Dependent Samples**. Ex: Testing for errors on two types of keyboard.

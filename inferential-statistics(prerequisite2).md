@@ -273,3 +273,98 @@ Another way of representing difference in hypotheses: `μD = μ1 - μ2`.
 Therefore, **Null Hypothesis: `μD = 0`** and **Alternate hypothesis: `μD != 0`**.
 
 **Note:** The paired sample tests involve **Dependent Samples**. Ex: Testing for errors on two types of keyboard.
+
+# Lessons 8-9: t-tests part 2:
+
+### Effect Size:
+Effect size emphasizes the **size of the difference** rather than confounding this with sample size. Effect size is a statistical concept that measures the strength of the relationship between two variables on a numeric scale. The effect size is the difference between the critical value and the value specified in the null hypothesis.
+
+- For a **z-test/t-test** effect size is the **mean difference** `x̅ - μ`.
+
+Means differences are great for variables when we have easy-to-understand meanings. But, for variables which are not easy to understand, the mean difference is not very useful.
+
+- There are other ways to calculate the effect size: **Standardized Difference**.
+
+One of the standardized difference measures is called **Cohen's d** (Already defined).
+
+- There are **Correlation Measures** as well.
+
+**r^2** is a correlation measure which is the proportion (%) of variation in one variable that is related to ("explained by") another variable.
+
+### Statistical Significance:
+**Statistical Significance** is a hard-to-grasp term. It does **NOT** mean the followinf:
+- Important
+- Large or Sizeable
+- Meaningful
+
+**Statistical Significance** only means two (**correct**) things:
+- We reject the Null Hypothesis
+- Results are not likely due to chance (Not accidental nor due to sampling error)
+
+### How to Determine Meaningfulness of Results?
+Since statistical significance does not talk about the meaningfulness of results, there are a few points by which we can determine that for a result:
+- What was measured? Variables - practical, social or theoretical importance .. ?
+- Effect size - even a small effect size can be helpful
+- Can we rule out random chance? Can we determine that the result is not due to sampling error?
+- Can we rule out alternative explanations? Can we rule out Lurking Variables?
+
+### Cohen's d (revisited):
+Cohen's d is a standardized difference. That is because, like other standardized scores (like z-score), it calculates something, difference between means and puts the difference in terms of number of standard deviations.
+
+`Cohen's d = (x̅ - μ) / S` where `S` is the standard deviation of the sample. 
+
+### r^2:
+r^2 is a correlation measure. It is also known as **Coefficient of determination**. r^2 values range from `0` to `1`. 
+
+`r^2 = 0` means that the variables are not at all related.
+`r^2 = 1` means that the variables are perfectly related. (Rarely happens in the real-world)
+
+#### Computing r^2:
+We can compute r^2 as follows:
+- Calculate the *t-score* or *t-statistic* (`t`). Note that this is the t-score that we compute and is **not** the t-critical value (that is at the edge of the CI/alpha level)
+- Determine the degrees of freedom (`df`) which is usually `n - 1` for sample size of `n`.
+- Calculate r^2 from the following formula:
+
+`r^2 = t^2 / (t^2 + df)`
+
+(Ex: t = 1, df = 10, therefore r^2 = 1 / (1 + 10) = 1/11 = 0.091 = 9.1%)
+
+#### Interpreting r^2:
+If r^2 is `x%` then it means that x% of the variation in a variable can be explained by another variable.
+
+### Writing Results of a Statistical Analysis:
+Whenever we conduct a statistical study, we must list the results section as follows:
+
+- Descriptive Statistics:
+		- We have to mandatorily mention the mean and standard deviation
+		- We can do this either by text,
+		- or graphs (A histogram, for example),
+		- or tables
+
+- Inferential Statistics: Hypothesis testing (with alpha level mentioned)
+		- What kind of test? Ex: One sampled t-test
+		-  t statistic
+		- df or degrees of freedom
+		- p-value
+		- direction of test (one tailed or two tailed?)
+
+**OR:** 
+
+- Inferential Statistics: APA (American Psychological Association) Style
+		- `t(df) = x.xx, p = .xx, direction`
+		- Example: `t(24) = -2.50, p < .05, one-tailed`
+
+**AND Other things:** 
+
+- Inferential Statistics: Confidence Intervals
+		- Mention the confidence level. E.g: 95%
+		- Lower limit (LL)
+		- Upper limit (UL)
+		- CI on what? Mention what the CI refers to.
+		- One type of representation: APA Style: `x%CI = (LL, UL)` (Ex: `95%CI = (4, 6)`)
+		- Altenative representation: `x%CI = (LL - UL)` or `x%CI = (LL to UL)`
+
+- Effect Size Measures:
+		- Mention Cohen's d or r^2 or both.
+		- `d = x.xx`
+		- `r^2 = .xx`

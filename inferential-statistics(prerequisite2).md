@@ -225,9 +225,9 @@ For a **t-test**:
 
 **Note: Just like we calculated y% confidence interval using z-scores, we can calculate CIs using t-statistics as well.**
 
-`Margin of error = CI / 2 = t * SE = t * (S/√n)`
+`Margin of error = CI / 2 = tc * SE = tc * (S/√n)` (Here, `tc` is the t-critical value)
 
-`Confidence Interval (CI) = Mean +/- marginOfError = Mean +/- t*(S/√n)`
+`Confidence Interval (CI) = Mean +/- marginOfError = Mean +/- tc*(S/√n)` (Here, `tc` is the t-critical value)
 
 **Note: Just like z-scores, we can think of t-statistics as the NUMBER OF STANDARD ERRORS.**
 

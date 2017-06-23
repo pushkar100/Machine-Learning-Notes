@@ -229,6 +229,8 @@ For a **t-test**:
 
 `Confidence Interval (CI) = Mean +/- marginOfError = Mean +/- tc*(S/√n)` (Here, `tc` is the t-critical value)
 
+(For confidence interval around population mean: use `μ` as mean, and For confidence interval around sample mean: use `x̅`  as mean)
+
 **Note: Just like z-scores, we can think of t-statistics as the NUMBER OF STANDARD ERRORS.**
 
 #### P-value:

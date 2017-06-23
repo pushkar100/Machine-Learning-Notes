@@ -408,3 +408,9 @@ Explanation: When we subtract one normal distribution (`N`) with mean `μ` and `
 **Degrees of Freedom (df):** `df = (n1 - 1) + (n2 - 1) = n1 + n2 - 2`
 
 **t-statistic:** `t = Difference between means / Std. Error = (x̅1 - x̅2) / SE`
+
+
+#### Pooled Variance (Sp^2):
+When we are dealing with two samples, we can find something known as Pooled variance:
+
+`Pooled Variance = Sp^2 = (SS1 + SS2) / (df1 + df2)` Where `SS1` and `SS2` are sum of squares for samples 1 and 2 resp. and `df1` and `df2` are degrees of freedom for samples 1 & 2 resp.

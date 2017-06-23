@@ -357,12 +357,12 @@ Whenever we conduct a statistical study, we must list the results section as fol
 **AND Other things:** 
 
 - Inferential Statistics: Confidence Intervals
-		- Mention the confidence level. E.g: 95%
-		- Lower limit (LL)
-		- Upper limit (UL)
-		- CI on what? Mention what the CI refers to.
-		- One type of representation: APA Style: `x%CI = (LL, UL)` (Ex: `95%CI = (4, 6)`)
-		- Altenative representation: `x%CI = (LL - UL)` or `x%CI = (LL to UL)`
+	- Mention the confidence level. E.g: 95%
+	- Lower limit (LL)
+	- Upper limit (UL)
+	- CI on what? Mention what the CI refers to.
+	- One type of representation: APA Style: `x%CI = (LL, UL)` (Ex: `95%CI = (4, 6)`)
+	- Altenative representation: `x%CI = (LL - UL)` or `x%CI = (LL to UL)`
 
 - Effect Size Measures:
 		- Mention Cohen's d or r^2 or both.

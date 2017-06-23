@@ -414,3 +414,5 @@ Explanation: When we subtract one normal distribution (`N`) with mean `μ` and `
 When we are dealing with two samples, we can find something known as Pooled variance:
 
 `Pooled Variance = Sp^2 = (SS1 + SS2) / (df1 + df2)` Where `SS1` and `SS2` are sum of squared differences [`sum of all (xi-x̅)^2` like how you normally calculate for variance ] for samples 1 and 2 resp. and `df1` and `df2` are degrees of freedom for samples 1 & 2 resp.
+
+**Corrected standard error (SE) using pooled variance:** `SE = √((Sp^2/n1) + (Sp^2/n2))` (Use `Sp` instead of `S1` and `S2`)

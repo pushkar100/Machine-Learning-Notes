@@ -336,23 +336,23 @@ If r^2 is `x%` then it means that x% of the variation in a variable can be expla
 Whenever we conduct a statistical study, we must list the results section as follows:
 
 - Descriptive Statistics:
-		- We have to mandatorily mention the mean and standard deviation
-		- We can do this either by text,
-		- or graphs (A histogram, for example),
-		- or tables
+	- We have to mandatorily mention the mean and standard deviation
+	- We can do this either by text,
+	- or graphs (A histogram, for example),
+	- or tables
 
 - Inferential Statistics: Hypothesis testing (with alpha level mentioned)
-		- What kind of test? Ex: One sampled t-test
-		-  t statistic
-		- df or degrees of freedom
-		- p-value
-		- direction of test (one tailed or two tailed?)
+	- What kind of test? Ex: One sampled t-test
+	-  	statistic
+	- df or degrees of freedom
+	- p-value
+	- direction of test (one tailed or two tailed?)
 
 **OR:** 
 
 - Inferential Statistics: APA (American Psychological Association) Style
-		- `t(df) = x.xx, p = .xx, direction`
-		- Example: `t(24) = -2.50, p < .05, one-tailed`
+	- `t(df) = x.xx, p = .xx, direction`
+	- Example: `t(24) = -2.50, p < .05, one-tailed`
 
 **AND Other things:** 
 
@@ -365,6 +365,6 @@ Whenever we conduct a statistical study, we must list the results section as fol
 	- Altenative representation: `x%CI = (LL - UL)` or `x%CI = (LL to UL)`
 
 - Effect Size Measures:
-		- Mention Cohen's d or r^2 or both.
-		- `d = x.xx`
-		- `r^2 = .xx`
+	- Mention Cohen's d or r^2 or both.
+	- `d = x.xx`
+	- `r^2 = .xx`

@@ -405,7 +405,7 @@ Explanation: When we subtract one normal distribution (`N`) with mean `μ` and `
 
 **Standard Error (SE) when sample sizes are different (n1, n2):** `SE = √((S1^2/n1) + (S2^2/n2))`
 
-**Degrees of Freedom (df):** `df = (n1 - 1) + (n2 - 1) = n1 + n2 - 2`
+**Degrees of Freedom (df):** `df = df1 + df2 = (n1 - 1) + (n2 - 1) = n1 + n2 - 2`
 
 **t-statistic:** `t = Difference between means / Std. Error = (x̅1 - x̅2) / SE`
 

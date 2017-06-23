@@ -368,3 +368,43 @@ Whenever we conduct a statistical study, we must list the results section as fol
 	- Mention Cohen's d or r^2 or both.
 	- `d = x.xx`
 	- `r^2 = .xx`
+	
+# Lessons 10-11: t-tests part 3:
+
+### Advantages & Disadvantages of Dependent Samples:
+Advantages:
+- Controls for individual differences
+- Use fewer subjects
+- Cost-effective
+- Less time-consuming
+- less-expensive
+
+Disadvantages:
+- Carry-over effects: Second measurement can be affected by first measurement
+- Order may influence results
+
+Dependent Samples deal with **Within-subject designs**.
+
+### Independent Samples:
+Independent Samples deal with **Between-subject designs**. There are two ways in which we can do test independent samples:
+
+- Experimental
+- Observational
+
+When comparing two samples (visualize two distributions), the difference is what matters: Refer https://classroom.udacity.com/courses/ud201/lessons/1330208559/concepts/1548634750923
+
+`N(μ1, σ2) - N(μ2, σ2) = N( μ1 - μ2, √(σ1^2 + σ2^2) )` 
+
+Explanation: When we subtract one normal distribution (`N`) with mean `μ` and `σ` from another, it results in another **Normal Distribution** with mean being the *difference in means of the two distributions* and the new standard deviation being  `√(σ1^ 2 + σ2^2)`.
+
+**Note:**
+- If the two are samples then the new SD `(S) = √(S1^2 + S2^2)`.
+- The new distribution is more **spread out** than the original two graphs because the standard deviation for this graph is bigger than S1 (or σ1) and also bigger than S2 (or σ2).
+
+**Standard Error (SE):** `SE = √(S1^2 + S2^2) / √n = √((S1^2 + S2^2)/n)`
+
+**Standard Error (SE) when sample sizes are different (n1, n2):** `SE = √((S1^2/n1) + (S2^2/n2))`
+
+**Degrees of Freedom (df):** `df = (n1 - 1) + (n2 - 1) = n1 + n2 - 2`
+
+**t-statistic:** `t = Difference between means / Std. Error = (x̅1 - x̅2) / SE`

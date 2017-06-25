@@ -416,3 +416,6 @@ When we are dealing with two samples, we can find something known as Pooled vari
 `Pooled Variance = Sp^2 = (SS1 + SS2) / (df1 + df2)` Where `SS1` and `SS2` are sum of squared differences [`sum of all (xi-x̅)^2` like how you normally calculate for variance ] for samples 1 and 2 resp. and `df1` and `df2` are degrees of freedom for samples 1 & 2 resp.
 
 **Corrected standard error (SE) using pooled variance:** `SE = √((Sp^2/n1) + (Sp^2/n2))` (Use `Sp` instead of `S1` and `S2`)
+
+**Tough Question:** https://classroom.udacity.com/courses/ud201/lessons/1381238572/concepts/2529164880923
+**Answer in Forums (Correct):** https://discussions.udacity.com/t/lesson-11-prob-2-t-statistic/90020/2

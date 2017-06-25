@@ -14,8 +14,11 @@ The estimate occurs as a result of point estimation applied to a set of sample d
 
 **Point estimates do not account for sampling error!**
 
-#### Independent Variable:
+#### Independent & Dependent Variables:
+
 The independent variable here is the variable that we're hypothesizing changes or affects another variable.
+
+The dependent variable here is the variable that we're hypothesizing is changed or affected by another variable.
 
 ### Margin of Error:
 The **margin of error** is defined as the absolute distance between the mean and *two standard deviations*.

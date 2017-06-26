@@ -661,3 +661,86 @@ It holds true when dealing with two variables also. For example, the reason why 
 When we do not know which variable occurred first then there is something known as **Ambiguous Temporal Precedence**. To prove causality we need to know which one occurred first - and in this case, we can't prove causality. (Ex: A group of students take jazz class and really like. The teacher assumes his class caused them to like it. But, this need not be the case - since students who already liked jazz might have opted to take the class. Hence, the teacher's conclusion in support of causality is FALSE - **A Fallacy**.) 
 
 Research terms such as **Post-hoc fallacy** & **Third variable problem**.
+
+# Lessons 18-19: Regression
+The straight line which we draw on the scatter plots to depict correlation is known as the **regression line** or **line of best fit** (It helps us define the relationship between x & y).
+
+### Linear Regression:
+The line of best first helps:
+- Describe the data
+- Make predictions (Marking a y value based on an x value with the help of regression line)
+
+The **expected values** are represented by `ŷ` (y-hat) whereas the **observed values** are represented by `y`. Expected values are the ones that can be predicted from the line of best fit.
+
+`Residual = Difference between observed & expected values`
+
+### Symbolize Regression Equation:
+- `y-intercept` is the point on the`y-axis` where the regression line passes through it.
+- The `slope(m)` of the line is a measure of the angle at which the line cuts the y-axis. 
+
+`slope(m) = changes in y for every 1 unit change in x = (y0 - yb) / (x0 - x1)` where `b` is the `y-intercept` .
+
+**Equation for the regression line:**
+`ŷ = (slope)x + yIntercept = mx + b`
+
+If the *regression line* is for the **population**:
+- `ŷ = (β1)x + β0` where `β1` is the *population slope* and `β0` is the population y-intercept.
+
+**Note:**
+- Slope (m) can be negative (-ve).
+- Y-intercept (b) can be negative (-ve).
+
+### Guessing the best fit line (Mathematically):
+We need to find the exact `m` (slope) and `b` (y-intercept) that would help us identify clearly the regression line.
+
+**How?:**
+- One way is to **reduce** the **sum of residuals**.
+- The residuals could be negative & cancel out.
+- Therefore: we can work at reducing **Sum of Squared Residuals**. (`= Σ(y - ŷ)^2`)
+
+**Calculate slope(m):**
+The `slope(m) = r * (Sy/Sx)` where `r` is the correlation coefficient, `Sy` and `Sx` are standard deviations of `y` & `x` respectively.
+
+**Calculate y-intercept(b):**
+We need to find at least one data point that the regression line goes through and, along with slope, we can calculate the y-intercept.
+
+**Slope(m) = The change in y after we change x by 1 unit = The additional difference in y when compared to x.**
+
+**The y-intercept determines the minimum of the y-parameter it costs us every time & in all cases (independent of x-value). The slope on the other hand calculates the additional cost per change in x-value.**
+
+### Errors in prediction:
+Our predictions need not always match with observed/actual values. In fact, weakly scattered graphs will have more errors compared to strongly scattered graphs w.r.t prediction of value based on line of best fit.
+
+Finding errors in prediction: **Standard error of estimate**
+
+`Standard error of estimate = Sum of squared residuals / (N - 2)`
+`Standard error of estimate = Σ(y - ŷ)^2 / (N-2)`
+
+`N` is the total number of data points in the sample.
+
+### Hypothesis Testing for Slope:
+**"Are x & y linearly related?"**
+
+`H0`: `β1 = 0` (β1 is the population slope)
+
+`HA`: `β1 > 0` or `β1 < 0` or `β1 != 0` (β1 is the population slope)
+
+### t-test for Slope:
+**Note:** Always take the Degrees of Freedom (df) as `N-2`.
+
+Given the alpha level & df, we can find the `t-critical` value.
+
+The slope can be either negative or positive - Therefore, **two-tailed tests are possible**.
+
+If `t-statistic > t-critical` then there is enough evidence to 1. Reject the null & 2. Suggest a significant relationship between x & y.
+
+### Factors affecting Linear Regression:
+**Outliers** affect most data analysis measures. In correlation, the correlation coefficent `r` was affected. Here, in regression the regression line can change drastically due to an outlier. We must identify the outliers before we perform regression analysis.
+
+### Multiple Regression (Bonus):
+Instead of having one predictor variable(x), we have multiple predictors (and one outcome(y)).
+
+We still have one equation :  `ŷ = Ax1 + Bx2 + Cx3 ..` where A, B, C are "regression coefficients".
+
+`R = multiple correlation co-efficent`
+`R^2 = proportion of variability of y explained by our set of predictors`

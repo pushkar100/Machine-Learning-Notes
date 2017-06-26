@@ -525,3 +525,46 @@ Therefore, `F = MS(btw) / MS(wtn)`
 **Table** to find out f-critical values: http://www.socr.ucla.edu/applets.dir/f_table.html. We need two DFs - one for between grop variability (k-1) & one for within-group variability (N-k).
 
 (How to read f-table: https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758820923)
+
+# Lessons 14-15: ANOVA Continued
+
+### Multiple comparison tests:
+If ANOVA results show statistically significant differences between sample, we still *do not* which two samples are different.
+
+We need to conduct additional tests to find out which two samples were statistically different and that it was *not* sampling error that caused the difference.
+
+One of the tests is called **Tukey's Honestly Significant Difference (HSD)**.
+
+`HSD = q * √( MS(wtn)/n ) = q * (Sp / √n)` 
+
+- `q` is called the Studentized range, 
+- `Sp` is the pooled variance, 
+- `n` is the sample size.
+
+Therefore, from above it is clear that `Sp = √(MS(wtn))`
+
+Purpose of `q`: Adjust whole HSD so that it is less likely we commit a `Type-I` error (i.e: reject H0 when it is actually true).
+
+(Table for calculating `q`: https://www2.stat.duke.edu/courses/Spring98/sta110c/qtable.html)
+
+**Note:** On the table, `df` is the degrees of freedom for within-group variability.
+
+**If two or more of the samples have an absolute difference greater than HSD, then their difference is said to be statistically significant!**. That is, if `mean(x̅) of test A ~ mean(x̅) of test B > HSD` then A & B are said to be *statistically different*.
+
+
+**Drawback of Tukey's HSD:**
+- We can only calculate it when *sample sizes* are all the *same* (`= n`).
+
+### Cohen's D for Multiple Comparisons:
+`d = (x̅1 - x̅2) / √(MS(wtn))` for comparison between sample 1 & sample 2.
+
+### η^2 (Eta Square) for Effect Size:
+`η^2` is another measure of effect size like ANOVA.
+
+`η^2` tells us the proportion of total variation that is due to between-group differences (**Explained Variation**).
+
+`η^2 = SS(btw) / (SS(btw)+SS(wtn)) = SS(btw) / SS(total)`
+
+Example: If `η^2` is say `x%` then `x%` of the reason for the difference is due to the difference between groups (between samples).
+
+Range of η^2: `0 <= η^2 <= 1`

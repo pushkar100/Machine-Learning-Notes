@@ -573,3 +573,90 @@ Range of η^2: `0 <= η^2 <= 1`
 ### Assumptions in ANOVA:
 - *Normality assumption*: The data from each sample fall along a normal curve.
 - *Homogeneity variance:* The data come from populations with similar amounts of variability.
+
+# Lessons 16-17: Correlation
+Up until now we were talking about "one variable". What if the data we are analyzing contains two variables? In that case, we will need a new design - how we collect data, how we visualize data - but the way in which we analyze could still be the same.
+
+We generally deal with two variables that are related like, height & weight, time spent studying & grades, etc.
+
+One of the variables is assigned `x` while the other is assigned `y` (Convention).
+
+`x` parameter is usually known as **independent variable**, **predictor**, or **explanatory**.
+
+`y` parameter is usually known as the **outcome**, **response**, or **dependent**.
+
+How do we define the relationship between the `x` and `y` variables?
+- A strong relationship has a **direction**.
+- **Positive relationship:** As `x` increases `y` also increases. *(+ve slope, upwards)*
+- **Negative relationship:** As `x` increases `y` decreases. *(-ve slope, downwards)*
+
+**Correlation** is a way to measure how to things are related to each other. Correlation is a statistical measure that indicates the extent to which two or more variables fluctuate together. A positive correlation indicates the extent to which those variables increase or decrease in parallel; a negative correlation indicates the extent to which one variable increases as the other decreases.
+
+If two variables have a **strong relationship** then it means that they have a **high correlation.**
+
+Correlation between `x` and `y` are usually depicted on **Scatter plots.**
+
+(Watch & solve: https://classroom.udacity.com/courses/ud201/lessons/1345848540/concepts/1715827330923)
+
+### Correlation Coefficient (`r`):
+Correlation Coefficient (`r`) also known as **Pearson's `r`** is defined as:
+
+`r = COV(x, y) / (Sx * Sy)`
+
+`COV(x, y)` = **Co-variance** of x & y (i.e How much x & y vary together).
+`Sx`  = **Standard deviation** of `x` values.
+`Sy`  = **Standard deviation** of `y` values.
+
+**Note:**
+- `r` is **not** a percentage.
+- `r^2` is the **percentage variation in `y` explained by the variation in `x`**.
+- `r^2` is also known as the **coefficient of determination**.
+
+**Note: values of r**
+- Perfectly positive correlation (upwards, +ve slope) : `r = 1` (Ex: Age in years vs age in months)
+- Perfectly negative correlation (downwards, -ve slope) : `r = -1` (Ex: Sleep hours vs awake hours)
+- No correlation (randomly scattered) : `r = 0`
+- *All other* correlations: `-1 < r < 1`
+- The closer the `r` values to `1` or `-1` the **stronger** the correlation.
+- The closer the `r` values to `0` the **weaker** the correlation.
+
+#### Calculating Pearson's r in the Google Spreadsheet:
+`=PEASRON(start cell for var x : end cell for var x, start cell for var y : end cell for var y)`
+
+#### Step-wise calculation of correlation:
+Refer: https://www.mathsisfun.com/data/correlation.html
+
+**Note:** Our population data might have correlation but not our sample. This is one of the reasons for sampling error.
+
+Which is why the **true correlation for population** is defined by **ρ** (rho). (`r` is the correlation between samples).
+
+#### Hypothesis testing for correlation: 
+- **Null Hypothesis (`H0`)** states: `ρ = 0`
+- **Alternate Hypothesis (`HA`)** states: `ρ > 0`, `ρ < 0`, or `ρ != 0`
+
+We hypothesize between populations (not samples) - hence, we used ρ.
+
+**Hypothesis testing** can be done using the **t-statistics**:
+- `t = (r * √(N - 2)) / √(1 - r^2)` where `N = all sets of x & y values`
+- Degrees of Freedom: `df = N - 2` (Subtract one from each x & y values)
+- We can use the `t-table` to get the `t-critical` values.
+- We **can do** a non-directional (two-tailed t-test) (`ρ != 0`)
+
+**Note:**
+- If `t-statistic > t-critical` then we **reject the null**. 
+- If `t-statistic > t-critical` then **there is a significant relationship between x & y**. 
+
+### Confidence Interval for the True Correlation (CI for ρ):
+- If CI includes `0` (Ex: {-.34, 0.41}) then we **cannot reject the null (retain it)**.
+- If CI does **not** include `0` (Ex: {0.49, 0.566}) then we **reject the null**.
+
+**Alternatively:** We can also find **p-values** and compare them against alpha levels (and either retain or reject the null).
+
+### Re-iterating earlier proof: Correlation does imply causation!
+(Refer: https://classroom.udacity.com/courses/ud201/lessons/1345848540/concepts/1715827820923)
+
+It holds true when dealing with two variables also. For example, the reason why causation cannot be proved is because of **lurking variables (external factors)**, which could be anything, things that we don't even know.  For causation, the independent variable must occur before the dependent variable. Maybe there exists a LV `a` that affects both `x` & `y` that causes the correlation or `x` affects `a` which in-turn affects `y`. We may never know. (`a` is called the *mediator variable*). Hence, correlation cannot prove causation!
+
+When we do not know which variable occurred first then there is something known as **Ambiguous Temporal Precedence**. To prove causality we need to know which one occurred first - and in this case, we can't prove causality. (Ex: A group of students take jazz class and really like. The teacher assumes his class caused them to like it. But, this need not be the case - since students who already liked jazz might have opted to take the class. Hence, the teacher's conclusion in support of causality is FALSE - **A Fallacy**.) 
+
+Research terms such as **Post-hoc fallacy** & **Third variable problem**.

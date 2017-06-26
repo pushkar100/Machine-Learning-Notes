@@ -498,8 +498,8 @@ https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/16117585
 
 The peak is `1`. That is, no difference between the group variabilities of between & within groups.
 
-- **Sum of Squares for between samples** = `SS(btw) = (n*Σ(x̅k - x̅g)^2) / (k - 1)`
-- **Sum of Squares for within samples** = `SS(wtn) = (Σ(x̅i - x̅k)^2) / (N - k)`
+- **Sum of Squares for between samples** = `SS(btw) = (n*Σ(x̅k - x̅g)^2)` and `df(btw) = (k - 1)`
+- **Sum of Squares for within samples** = `SS(wtn) = (Σ(x̅i - x̅k)^2)` and `df(wtn) = (N - k)`
 
 Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
 

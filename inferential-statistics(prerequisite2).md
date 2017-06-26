@@ -508,7 +508,7 @@ Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
 **Note**:
 - DF for between-group variability `df(btw) = k - 1`
 - DF for within-group variability `df(wtn) = N - k`
-- Hence, `df(Total) = df(btw) + df(wtn) = N - 1 = All sample values - 1`)
+- Hence, `df(Total) = df(btw) + df(wtn) = N - 1 = All sample values - 1`
 
 **Note**:
 - `F` is a positive ratio.

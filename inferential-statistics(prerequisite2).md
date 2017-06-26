@@ -505,6 +505,8 @@ Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
 
 **Mean Squares:** `MS(btw) = SS(btw) / df(btw)` and `MS(wtn) = SS(wtn) / df(wtn)`
 
+Therefore, `F = MS(btw) / MS(wtn)`
+
 **Note**:
 - DF for between-group variability `df(btw) = k - 1`
 - DF for within-group variability `df(wtn) = N - k`

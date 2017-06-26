@@ -425,3 +425,95 @@ When we are dealing with two samples, we can find something known as Pooled vari
 
 **Tough Question:** https://classroom.udacity.com/courses/ud201/lessons/1381238572/concepts/2529164880923
 **Answer in Forums (Correct):** https://discussions.udacity.com/t/lesson-11-prob-2-t-statistic/90020/2
+
+# Lessons 12-13: One-way ANOVA
+
+### Intuition:
+Assume we have 3 samples and we can do independent sample testing by computing 3 t-test scores and checking for statistical significance between any of them. This is a tedious task. There is a simpler approach.
+
+Samples: A, B and C. t-tests required - A&B, B&C and A&C. Too many t-tests as number of samples increases.
+
+**Number of t-tests** with `n` samples `= nC2 = n! / (n-2)!2!`.
+
+t-tests basically measures the mean difference by standard error. Basically, `difference/error`. We can find a way to calculate the mean difference between more than 2 samples (>=2).
+
+### Grand Mean (`x̅g`):
+Grand mean (`x̅g`) is the **total mean of all sample means**.
+
+#### Calculating the Grand Mean:
+If sample sizes are **equal**: `x̅g = mean of sample means = (x̅1 + x̅2 + .. + x̅n) / n = mean of all values from all samples = (x1 + x2 + .. + xN) / N` where `n` is the number of samples and `N` is the total number of values in all of the samples together.
+
+If sample sizes are **unequal**: `x̅g = mean of all values from all samples = (x1 + x2 + .. + xN) / N` where `N` is the total number of values in all of the samples together.
+
+**Note: Between-Group Variability**
+- **Smaller** the distance between sample means, the **less likely** population means will differ significantly.
+- **Larger** the distance between sample means, the **more likely** population means will differ significantly.
+
+**Note: Within-Group Variability**
+- The **greater** the variability (spread of the sample distribution) of each individual sample the **less likely** that population means will differ significantly.
+- The **smaller** the variability (spread of the sample distribution) of each individual sample the **more likely** that population means will differ significantly.
+
+Difference in the means - The distance or variability between the means is the **average squared deviation of each sample mean from the total mean**.
+
+### ANOVA:
+ANOVA stands for **ANalysis Of VAriance**. And it is a measure of `difference / error` just like t-tests but useful while dealing with multiple samples of the same population (>=2). 
+
+When the *number of independent variables* = `1` then we say we have **One-way ANOVA**. (Scope of this Udacity course is limited to One-way ANOVA)
+
+For ANOVA Tests:
+- `μ1 = μ2 = μ3 .. etc` will be the **Null Hypothesis (H0)**
+- `At least one pair of samples is significantly different` will be the **Alternate Hypothesis (HA)**
+
+**Note:**
+- The **larger** the *within-group variability* (spread of distribution) the greater the lean towards *null hypothesis (H0)*.
+- The **larger** the *between-group variability* (means of samples are further apart) the greater the lean towards *alternate hypothesis (HA)*.
+
+**Important!:** The alternate hypothesis means that one pair of samples vary significantly. (**But we do not know which one** - to figure that out we must do some more tests.)
+
+#### Statistic that includes between & within group variability: `F-ratio`
+
+### F-Ratio:
+The `F-Ratio` is a statistical measure that compares multiple samples by considering both within-group & between-group variability.
+
+The *greater* the F-ratio the more likely we are to *Reject the Null (Reject H0)*.
+
+`F = Between-group variability / Within-group variability`
+
+**Exercise: Visualize statistical outcome - ** https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758350923
+
+**Proper Formula:**
+`F = [(n*Σ(x̅k - x̅g)^2) / (k - 1)] / [(Σ(x̅i - x̅k)^2) / (N - k)]` 
+
+- `N` = Total number of values in all the samples combined.
+- `n` = The sample size (All samples having *same size*).
+- `k` = Total number of samples.
+- `x̅k` = It is the sample mean of the sample that is being considered.
+- `x̅g` = The Grand Mean.
+- `F` is a ratio and it is **never** negative.
+
+**F-statistic graph:**
+https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758530923 (Positively skewed but not symmetric - only exists in the 1st quadrant of the graph)
+
+The peak is `1`. That is, no difference between the group variabilities of between & within groups.
+
+- **Sum of Squares for between samples** = `SS(btw) = (n*Σ(x̅k - x̅g)^2) / (k - 1)`
+- **Sum of Squares for within samples** = `SS(wtn) = (Σ(x̅i - x̅k)^2) / (N - k)`
+
+Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
+
+**Mean Squares:** `MS(btw) = SS(btw) / df(btw)` and `MS(wtn) = SS(wtn) / df(wtn)`
+
+**Note**:
+- DF for between-group variability `df(btw) = k - 1`
+- DF for within-group variability `df(wtn) = N - k`
+- Hence, `df(Total) = df(btw) + df(wtn) = N - 1 = All sample values - 1`)
+
+**Note**:
+- Since `F` is a positive ratio.
+- `F` statistic cannot be negative! Only absolute values.
+- The `F-critical` region lies to the positive side (right side of 1st quadrant).
+- We can only have `one-tailed` & `positive` F-tests.
+
+**Table** to find out f-critical values: http://www.socr.ucla.edu/applets.dir/f_table.html. We need two DFs - one for between grop variability (k-1) & one for within-group variability (N-k).
+
+(How to read f-table: https://classroom.udacity.com/courses/ud201/lessons/1306898579/concepts/1611758820923)

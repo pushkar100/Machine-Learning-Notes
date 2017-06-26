@@ -569,3 +569,7 @@ Purpose of `q`: Adjust whole HSD so that it is less likely we commit a `Type-I` 
 Example: If `η^2` is say `x%` then `x%` of the reason for the difference is due to the difference between groups (between samples).
 
 Range of η^2: `0 <= η^2 <= 1`
+
+### Assumptions in ANOVA:
+- *Normality assumption*: The data from each sample fall along a normal curve.
+- *Homogeneity variance:* The data come from populations with similar amounts of variability.

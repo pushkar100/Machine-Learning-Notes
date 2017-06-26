@@ -509,8 +509,8 @@ Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
 - Hence, `df(Total) = df(btw) + df(wtn) = N - 1 = All sample values - 1`)
 
 **Note**:
-- Since `F` is a positive ratio.
-- `F` statistic cannot be negative! Only absolute values.
+- `F` is a positive ratio.
+- `F` can have only absolute values.
 - The `F-critical` region lies to the positive side (right side of 1st quadrant).
 - We can only have `one-tailed` & `positive` F-tests.
 

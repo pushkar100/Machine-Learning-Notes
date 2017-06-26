@@ -510,6 +510,7 @@ Therefore, `F = MS(btw) / MS(wtn)`
 **Also note:** 
 - `SS(total) = SS(btw) + SS(wtn) = Σ(x̅i - x̅g)^2)` for all the values from all the samples.
 - **When sample sizes are different**: `SS(btw) = Σ(nk * (x̅k - x̅g)^2)` when `nk`= sample size of the kth sample.
+- **SS{within}** is also called **SS{error}** because this is the variation that can't be explained by the independent variable.
 
 **Note**:
 - DF for between-group variability `df(btw) = k - 1`

@@ -619,6 +619,7 @@ Correlation Coefficient (`r`) also known as **Pearson's `r`** is defined as:
 - *All other* correlations: `-1 < r < 1`
 - The closer the `r` values to `1` or `-1` the **stronger** the correlation.
 - The closer the `r` values to `0` the **weaker** the correlation.
+- As sample size **increases** the `r` gets **smaller**.
 
 #### Calculating Pearson's r in the Google Spreadsheet:
 `=PEASRON(start cell for var x : end cell for var x, start cell for var y : end cell for var y)`

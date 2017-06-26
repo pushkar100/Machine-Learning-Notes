@@ -507,6 +507,8 @@ Therefore, `F = [SS(btw) / df(btw)] / [SS(wtn) / df(wtn)]`.
 
 Therefore, `F = MS(btw) / MS(wtn)`
 
+**Also note:** `SS(total) = SS(btw) + SS(wtn) = Σ(x̅i - x̅g)^2)` for all the values from all the samples.
+
 **Note**:
 - DF for between-group variability `df(btw) = k - 1`
 - DF for within-group variability `df(wtn) = N - k`

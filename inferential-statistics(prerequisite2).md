@@ -453,6 +453,8 @@ If sample sizes are **unequal**: `x̅g = mean of all values from all samples = (
 - The **greater** the variability (spread of the sample distribution) of each individual sample the **less likely** that population means will differ significantly.
 - The **smaller** the variability (spread of the sample distribution) of each individual sample the **more likely** that population means will differ significantly.
 
+Between vs Within Group variability example: Treatment effects! Treatment effects would only increase variability between groups, not within a treatment group.
+
 Difference in the means - The distance or variability between the means is the **average squared deviation of each sample mean from the total mean**.
 
 ### ANOVA:

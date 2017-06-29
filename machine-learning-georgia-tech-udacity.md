@@ -7,7 +7,7 @@ Its prerequisites include:
 2. Intro to Inferential Statistics (or any elementary statistics course should do)
 3. The course uses python, so we must be comfortable with python programming.
 
-# Machine Learning (Udacity - Georgia Tech):
+# Lesson 1: ML is the ROX
 
 **Machine learning** is the broader notion of building computational artifacts learn over time based on experience.
 

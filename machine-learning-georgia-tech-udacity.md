@@ -59,3 +59,63 @@ Every approach to ML is some type of **Optimization**.
 - Reinforcement learning tries to optimize behavior scores well.
 - Unsupervised learning tries to make up some kind of criterion and develop clusters based on it. And, it tries to optimize the cluster scores well.
 
+# Lesson 2: Supervised Learning 1 - Decision Trees
+
+There are typically two types of supervised learning:
+1. Classification
+2. Regression
+
+**Classification** is the process of taking an input and mapping it to a *discrete set of labels*, like true or false.
+
+Example: Mapping a picture of a person (input) to a discrete set of labels - i.e Male or Female. Other types of discrete labels include car or airplane, true or false, etc (anything we might imagine).
+
+**Regression** is more about *continuous valued functions*. (Unlike the discrete nature of classification). Given a bunch of points, we want to map a new value to a point. We will have a line depicting the existing values and the new value will be a point on that line. (That line represents a continuous function).
+
+Classification vs Regression:
+- Classification is mapping input to one of a samll set of outputs. (Output = discrete values)
+- Regression is mapping input to a real number (potentially to one of an infinite set of real numbers). (Hence, Output = continuous values).
+
+Examples:
+```
+Input: Credit score (Related to bank account)
+Output: Lend money/not?
+
+Type: Classification
+```
+
+```
+Input: Picture of a person
+Output: High school/college student/graduate?
+
+Type: Classification
+```
+
+```
+Input: Picture of a person
+Output: Age? (age can be fractional too)
+
+Type: Regression (Could be a any age - continuous range)
+```
+
+```
+Input: Picture of a person
+Output: Age in years (and nobody lives above 150)
+
+Type: Classification 
+(Age values are discrete - not continous - 
+and the upper limit is 150 so the output 
+is a very large discrete set of years of size 150)
+```
+
+## Classification Learning:
+Some important terms related to classification:
+- **Instance**: It is basically the **input** (or whatever makes up the input). Ex: Pixels of a picture, credit score indicator like money in the bank, etc.
+- **Concept**: It is a **function** that **maps** an object (**input**) to the set of **output** (discrete set of values in case of classification). Ex: You are given an object and you need to tell us whether it is a car or not. (Usually, we deal with binary outputs in classification - like true or false - although we can work with more values as well). Intuitively, a concept is an idea and the function here represents that idea (Ex: maleness or femaleness of a person based on his picture - the function tells us that / maps it).
+- **Target Concept**: The only difference between a concept and a target concept is that target concept is the thing we are trying to find i.e it is the actual answer. Ex: A function that tells us whether the object is a car or not? Out of all the concepts (functions) that might map the input to one of a set of outputs, the target concept is the answer (or mapping) that **we** are looking for! (Target concept is a specific idea)
+- **Hypothesis (or Hypothesis Class)**: It is the set of all concepts that you are willing to entertain (Subset of concepts). We can use the *set of all concepts* as the hypothesis class - but this might make it hard for us to pick the concept we are interested in, the target concept, with limited or finite amount of data. One more way to think of it is that if we include all the mappings/concepts/functons we get a continuous set of outputs - and this represents regression not classification. 
+- **Sample**: Sample is the **training set** (for supervised learning). What is a training set? It is the **set of all inputs that paired with a label**. Ex: Picture of a man paired with a label that says he is a man. Other examples: {Brown Hair color, woman}, etc.
+- **Candidate**: It is the concept that *we think* might be the target concept. (Ex: assuming that if there is curly hair then the person is credit worthy - can get loan from bank).
+- **Testing Set**: Testing set helps us determine if our candidate concept is right or wrong. Testing set looks exactly like the training set. We go through all the data in testing set, apply it to the candidate concept and compare it to the actual values of the testing set - to see if candiate predictions were right or wrong.
+
+**All these terms will be clear once we start understanding specific problems over the next few lessons**
+

@@ -3,8 +3,8 @@
 A simple introductory course to Machine Learning offered by Georgia Institute of Technology on Udacity. 
 
 Its prerequisites include: 
-1. Intro to Descriptive Statistics, 
-2. Intro to Inferential Statistics (Any elementary statistics course should do), and
+1. Intro to Descriptive Statistics
+2. Intro to Inferential Statistics (or any elementary statistics course should do)
 3. The course uses python, so we must be comfortable with python programming.
 
 # Machine Learning (Udacity - Georgia Tech):

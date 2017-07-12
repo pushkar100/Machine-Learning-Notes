@@ -119,3 +119,54 @@ Some important terms related to classification:
 
 **All these terms will be clear once we start understanding specific problems over the next few lessons**
 
+### Decision Trees
+Let us take an example: You are on a date and come up to a restaurant. You need to decide if you want to enter that particular restaurant. The input to decide are the *features* of that restaurant. Output is if we must *enter or not*?.
+
+The above example is a *classification* problem - binary outputs {enter, do not}. Hence, it is a binary classification problem.
+
+Features of the restaurant (input):
+- Type: french, thai, indian, etc.
+- Atmosphere: fancy, hole-in-the-wall, casual.
+- Restaurant is occupied or not?
+- Hot date you want to impress or not?
+- Cost: How expensive is it?
+- How hungry are you?
+- Is it raining outside or not? .. etc.
+
+First, we need to ++represent++ our Decision Tree and only then can we think about the ++algorithm++ to work with the tree.
+
+#### Representation of Decision Tree:
+
+![](https://databricks.com/wp-content/uploads/2014/09/decision-tree-example.png)
+
+A decision tree is like a normal tree data structure. 
+
+Decision Tree consists of the following:
+- It has nodes (points) and edges.
+- The **nodes** refer to the **attribute** or behavior. (Ex: A node can refer to hunger - "Hungry or not?")
+- The **edges** represent the **values** for an attribute. (Ex: One of the edges from the 'hunger' node will have a value 'true' and the other will have a value 'false')
+- Root node is the top-most node of the tree. We traverse the tree from the root (i.e **Top-down** & not bottom-up)
+
+The Decision Tree allows us to ++ask a series of questions (starting from the root) and based on the answers(values) we eventually end up choosing a path leading to a specific output++.
+
+**Example of a testing set:** We feed data from our testing set to the decision tree to get the output:
+
+Ex:
+![](http://cdn.guru99.com/images/1-2015/012715_0719_DecisionTab3.png)
+(In the above image, fly from & fly to are inputs while outcome is whether we have a flight for the inputs or not - the inputs can be fed to a decision tree to get the output)
+
+**Note:** Whenever we construct a decision tree, we may or may not include all the input features in the selection. Therefore, whatever tree we get is a specific decision tree - hence, it becomes a **Candidate concept**.
+
+(Refer: https://classroom.udacity.com/courses/ud262/lessons/313488098/concepts/3140257630923)
+
+#### Writing an Algorithm to work with Decision Tree:
+Every question that we ask needs to further narrow down the possibilities of the outcome. For example, if we are playing a game of 20 questions then a good first question would be 'animal or not?' - this reduces your concerned space to living things or inanimate & plant objects. A good second question could be 'person or not?' - again narrowing down the possibilies. The last guess could be the name of the person (Ex: 'Michael Jackson') but the same question is not a good first question since it fails to narrow down the possbilites especially if your guess is incorrect.
+
+**An approach to picking a good Decision Algorithm:**
+1. Pick best attribute (Ex: Best is one that splits data into roughly two sets).
+2. Ask a specific question.
+3. Follow the answer path.
+4. Repeat first step (for another attribute) until we get an answer.
+5. The only thing to keep in mind is that for constructing a decision tree, we need to go down the paths of all attribute values to get all possible outcomes (whereas when traversing an already built tree we would be going down only onw specifi path based on specific values).
+
+
